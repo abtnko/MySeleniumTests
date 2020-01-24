@@ -1,8 +1,9 @@
 package base;
 
 public enum User {
-    Tom ("Tom", "Haverford", "tom.h76@yopmail.com", "732168882", "3xTOMtomTOM", "QA TEST"),
-    Fake ("F", "F", "f@", "000000", " ", "Fake Co.");
+    Tom ("Tom", "Haverford", "tom.h76@yopmail.com", "732168882", "3TOMtomTOM", "QA TEST"),
+    FakeWithLetters ("F", "F", "f@", "000000", " ", "Fake Co."),
+    FakeWithDigits ("11", "22", " ", " ", "", "");
 
     private final String name;
     private final String surname;

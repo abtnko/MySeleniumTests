@@ -18,7 +18,6 @@ public class ChangePassword extends BaseTests {
     @Test
     public void changeInCorrectFormat() throws IOException {
         User user = User.Tom;
-        String currentPassword = "3xTOMtomTOM";
         String newPassword = "3xtomTOMtom";
         LoginPage loginPage = homePage.clickOnLoginIcon();
         loginPage.setCorrectLogin(user);
@@ -26,9 +25,9 @@ public class ChangePassword extends BaseTests {
         DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(3);
         MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
-        myAccountPage.enterCurrentPassword(currentPassword);
-        myAccountPage.enterNewPassword(newPassword);
-        myAccountPage.confirmNewPassword(newPassword);
+        myAccountPage.enterCurrentPasswordUser(user);
+        myAccountPage.enterNewPasswordString(newPassword);
+        myAccountPage.confirmNewPasswordString(newPassword);
         myAccountPage.clickOnSaveButton();
         delay(2);
         myAccountPage.checkPresenceOfPopUp();
@@ -45,9 +44,9 @@ public class ChangePassword extends BaseTests {
         delay(2);
 //        Changing password back to permanent one
         dashboardPage.goToMyAccount();
-        myAccountPage.enterCurrentPassword(newPassword);
-        myAccountPage.enterNewPassword(currentPassword);
-        myAccountPage.confirmNewPassword(currentPassword);
+        myAccountPage.enterCurrentPasswordString(newPassword);
+        myAccountPage.enterNewPasswordUser(user);
+        myAccountPage.confirmNewPasswordUser(user);
         myAccountPage.clickOnSaveButton();
         delay(2);
         dashboardPage.logOut();
@@ -56,7 +55,6 @@ public class ChangePassword extends BaseTests {
     @Test
     public void changeOnlyLetters() throws IOException {
         User user = User.Tom;
-        String currentPassword = "3xTOMtomTOM";
         String newPassword = "bbbbbbbB";
         LoginPage loginPage = homePage.clickOnLoginIcon();
         loginPage.setCorrectLogin(user);
@@ -64,9 +62,9 @@ public class ChangePassword extends BaseTests {
         DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(3);
         MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
-        myAccountPage.enterCurrentPassword(currentPassword);
-        myAccountPage.enterNewPassword(newPassword);
-        myAccountPage.confirmNewPassword(newPassword);
+        myAccountPage.enterCurrentPasswordUser(user);
+        myAccountPage.enterNewPasswordString(newPassword);
+        myAccountPage.confirmNewPasswordString(newPassword);
         delay(2);
         myAccountPage.checkAlertTextForLetters();
         validationTest.captureScreenShots();
@@ -77,7 +75,6 @@ public class ChangePassword extends BaseTests {
     @Test
     public void changeOnlyDigits() throws IOException {
         User user = User.Tom;
-        String currentPassword = "3xTOMtomTOM";
         String newPassword = "11111111";
         LoginPage loginPage = homePage.clickOnLoginIcon();
         loginPage.setCorrectLogin(user);
@@ -85,9 +82,9 @@ public class ChangePassword extends BaseTests {
         DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(3);
         MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
-        myAccountPage.enterCurrentPassword(currentPassword);
-        myAccountPage.enterNewPassword(newPassword);
-        myAccountPage.confirmNewPassword(newPassword);
+        myAccountPage.enterCurrentPasswordUser(user);
+        myAccountPage.enterNewPasswordString(newPassword);
+        myAccountPage.confirmNewPasswordString(newPassword);
         myAccountPage.checkAlertTextForDigits();
         delay(3);
         validationTest.captureScreenShots();
@@ -98,7 +95,6 @@ public class ChangePassword extends BaseTests {
     @Test
     public void changeLessThan8Characters() throws IOException {
         User user = User.Tom;
-        String currentPassword = "3xTOMtomTOM";
         String newPassword = "bbb111";
         LoginPage loginPage = homePage.clickOnLoginIcon();
         loginPage.setCorrectLogin(user);
@@ -106,9 +102,9 @@ public class ChangePassword extends BaseTests {
         DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(3);
         MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
-        myAccountPage.enterCurrentPassword(currentPassword);
-        myAccountPage.enterNewPassword(newPassword);
-        myAccountPage.confirmNewPassword(newPassword);
+        myAccountPage.enterCurrentPasswordUser(user);
+        myAccountPage.enterNewPasswordString(newPassword);
+        myAccountPage.confirmNewPasswordString(newPassword);
         myAccountPage.checkAlertTextForCharacters();
         validationTest.captureScreenShots();
         delay(2);
@@ -117,39 +113,55 @@ public class ChangePassword extends BaseTests {
 
     @Test
     public void changeWhenTwoDifferent() throws IOException {
-        User user1 = User.Tom;
-        String currentPassword = "3xTOMtomTOM";
+        User user = User.Tom;
         String newPassword = "bbb111BBB";
         LoginPage loginPage = homePage.clickOnLoginIcon();
-        loginPage.setCorrectLogin(user1);
-        loginPage.setCorrectPassword(user1);
+        loginPage.setCorrectLogin(user);
+        loginPage.setCorrectPassword(user);
         DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(3);
         MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
-        myAccountPage.enterCurrentPassword(currentPassword);
-        myAccountPage.enterNewPassword(newPassword);
-        myAccountPage.confirmNewPassword(currentPassword);
+        myAccountPage.enterCurrentPasswordUser(user);
+        myAccountPage.enterNewPasswordString(newPassword);
+        myAccountPage.confirmNewPasswordUser(user);
         myAccountPage.checkAlertTextForMismatch();
         validationTest.captureScreenShots();
         delay(2);
         dashboardPage.logOut();
     }
 
-//    @Test
+    @Test
     public void changeWhenMoreThanFifty() throws Exception {
-        User user1 = User.Tom;
-        String currentPassword = "3xTOMtomTOM";
-        String newPassword = "bbb111BBBbbb111BBBbbb111BBBbbb111BBBbbb111BBBbbb111BBB";
+        User user = User.Tom;
+        String newPassword = "aaa333AAAaaaa333AAAaaaa333AAAaaaa333AAAaaaa333AAAaa";
         LoginPage loginPage = homePage.clickOnLoginIcon();
-        loginPage.setCorrectLogin(user1);
-        loginPage.setCorrectPassword(user1);
+        loginPage.setCorrectLogin(user);
+        loginPage.setCorrectPassword(user);
         DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(3);
         MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
-        myAccountPage.enterCurrentPassword(currentPassword);
-        myAccountPage.enterNewPassword(newPassword);
-        myAccountPage.confirmNewPassword(currentPassword);
-        myAccountPage.checkAlertTextForMismatch();
+        myAccountPage.enterCurrentPasswordUser(user);
+        myAccountPage.enterNewPasswordString(newPassword);
+        myAccountPage.confirmNewPasswordString(newPassword);
+        myAccountPage.checkAlertTextForMoreThanFifty();
+        validationTest.captureScreenShots();
+        delay(2);
+        dashboardPage.logOut();
+    }
+
+    @Test
+    public void changeToSameAsOldOne() throws Exception {
+        User user = User.Tom;
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        loginPage.setCorrectPassword(user);
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
+        delay(3);
+        MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
+        myAccountPage.enterCurrentPasswordUser(user);
+        myAccountPage.enterNewPasswordUser(user);
+        myAccountPage.confirmNewPasswordUser(user);
+        myAccountPage.checkAlertTextForSamePasswordAsOld();
         validationTest.captureScreenShots();
         delay(2);
         dashboardPage.logOut();

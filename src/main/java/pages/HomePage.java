@@ -16,12 +16,13 @@ public class HomePage extends BaseTests {
 
     private WebDriver driver;
 
-    private By startTrial = By.xpath("//span[contains(text(), ' Start Trial')]");
+    private By startTrial = By.className("start-trial-text");
     private By loginIcon = By.xpath("//span[contains(text(), 'Login')]");
     private By tools = By.xpath("//div[contains(text(), 'Tools')]");
     private By news = By.xpath("//div[@class='news']");
     private By testAdvisor = By.xpath("//div[contains(text(), ' TestAdvisor')]");
     private By allNews = By.xpath("//div[contains(text(), 'All News')]");
+    private By mobileNews = By.xpath("//div[contains(text(), 'Mobile News')]");
     private By facebook = By.xpath("//img[@alt='Facebook']");
     private By twitter = By.xpath("//img[@alt='Twitter']");
     private By linkedIn = By.xpath("//img[@alt='LinkedIn']");
@@ -132,5 +133,13 @@ public class HomePage extends BaseTests {
         return new CloudAdvisorPage(driver);
     }
 
+    public RequestOfferPage goToRequestOfferPage(){
+        driver.get("https://beta.insightportal.io/subscribe/request-offer");
+        return new RequestOfferPage(driver);
+    }
 
+    public MobileNewsPage openMobileNewsPage(){
+        driver.findElement(mobileNews).click();
+        return new MobileNewsPage(driver);
+    }
 }

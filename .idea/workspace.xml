@@ -2,43 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be8695b7-5190-4b7d-920e-f04c33151b02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Validations/changeInCorrectFormat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Validations/changeLessThan8Characters.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Validations/changeOnlyDigits.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Validations/changeOnlyLetters.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Validations/changeWhenTwoDifferent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Validations/logInWithCorrectCredentials.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/base/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/base/ValidationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AllNewsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CloudAdvisorPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RequestOfferPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SocialMediaPages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/StartTrialPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/regression/CookiesBanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/changeToSameAsOldOne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/changeWhenMoreThanFifty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/setInvalidEmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/setNotMatchingPasswords.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/setPasswordLessEightCharacters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/setPasswordLowercaseLetters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/setPasswordMoreFiftyCharacters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/setPasswordOnlyDigits.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/setPasswordOnlyLetters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/setPasswordUppercaseLetters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MobileNewsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeLessThan8Characters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeLessThan8Characters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeOnlyDigits.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeOnlyDigits.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeOnlyLetters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeOnlyLetters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeWhenTwoDifferent.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeWhenTwoDifferent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/requestWithCorrectInputData.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithCorrectInputData.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongEmail.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongEmail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongName.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongName.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongPhone.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongPhone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongSurname.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongSurname.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AllNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AllNewsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RequestOfferPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RequestOfferPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/StartTrialPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/StartTrialPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/Articles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/Articles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/ChangePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/ChangePassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/SearchBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/SearchBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/SocialMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/SocialMedia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/StartTrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/StartTrial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/safari-desktop.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/TestBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BaseTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/AllNewsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/AllNewsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/MyAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MyAccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/RequestOfferPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/RequestOfferPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/StartTrialPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/StartTrialPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/regression/Articles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/Articles.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/regression/ChangePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/ChangePassword.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/regression/CloudAdvisor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/CloudAdvisor.class" afterDir="false" />
@@ -92,8 +97,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.ChangePassword.changeOnlyDigits">
-    <configuration name="Articles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SocialMedia">
+    <configuration name="Articles.checkArticlesTitlesInSearchList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InsightPortal-DesktopSafari" />
       <extension name="coverage">
         <pattern>
@@ -103,81 +108,82 @@
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
       <option name="MAIN_CLASS_NAME" value="regression.Articles" />
+      <option name="METHOD_NAME" value="checkArticlesTitlesInSearchList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Articles.checkDateCoverage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InsightPortal-DesktopSafari" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.Articles" />
+      <option name="METHOD_NAME" value="checkDateCoverage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Articles.checkDateCoverageWorksProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InsightPortal-DesktopSafari" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.Articles" />
+      <option name="METHOD_NAME" value="checkDateCoverageWorksProperly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchBar.checkArticlesTitlesInSearchList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InsightPortal-DesktopSafari" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.SearchBar" />
+      <option name="METHOD_NAME" value="checkArticlesTitlesInSearchList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SocialMedia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InsightPortal-DesktopSafari" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.SocialMedia" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChangePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InsightPortal-DesktopSafari" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.ChangePassword" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChangePassword.changeInCorrectFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InsightPortal-DesktopSafari" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.ChangePassword" />
-      <option name="METHOD_NAME" value="changeInCorrectFormat" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChangePassword.changeOnlyDigits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InsightPortal-DesktopSafari" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.ChangePassword" />
-      <option name="METHOD_NAME" value="changeOnlyDigits" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChangePassword.changeOnlyLetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InsightPortal-DesktopSafari" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.ChangePassword" />
-      <option name="METHOD_NAME" value="changeOnlyLetters" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ChangePassword.changeOnlyDigits" />
-        <item itemvalue="JUnit.ChangePassword.changeInCorrectFormat" />
-        <item itemvalue="JUnit.ChangePassword.changeOnlyLetters" />
-        <item itemvalue="JUnit.ChangePassword" />
-        <item itemvalue="JUnit.Articles" />
+        <item itemvalue="JUnit.SocialMedia" />
+        <item itemvalue="JUnit.Articles.checkDateCoverage" />
+        <item itemvalue="JUnit.Articles.checkDateCoverageWorksProperly" />
+        <item itemvalue="JUnit.SearchBar.checkArticlesTitlesInSearchList" />
+        <item itemvalue="JUnit.Articles.checkArticlesTitlesInSearchList" />
       </list>
     </recent_temporary>
   </component>
@@ -235,45 +241,45 @@
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
     <state x="391" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1575473030619" />
-    <state width="1878" height="351" key="GridCell.Tab.0.bottom" timestamp="1579853640897">
+    <state width="1878" height="351" key="GridCell.Tab.0.bottom" timestamp="1579881275468">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
-    <state width="1878" height="351" key="GridCell.Tab.0.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1579853640897" />
+    <state width="1878" height="351" key="GridCell.Tab.0.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1579881275468" />
     <state width="1878" height="372" key="GridCell.Tab.0.bottom/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911726" />
-    <state width="1878" height="351" key="GridCell.Tab.0.center" timestamp="1579853640896">
+    <state width="1878" height="351" key="GridCell.Tab.0.center" timestamp="1579881275467">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
-    <state width="1878" height="351" key="GridCell.Tab.0.center/0.23.1920.1096@0.23.1920.1096" timestamp="1579853640896" />
+    <state width="1878" height="351" key="GridCell.Tab.0.center/0.23.1920.1096@0.23.1920.1096" timestamp="1579881275467" />
     <state width="1878" height="372" key="GridCell.Tab.0.center/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911721" />
-    <state width="1878" height="351" key="GridCell.Tab.0.left" timestamp="1579853640895">
+    <state width="1878" height="351" key="GridCell.Tab.0.left" timestamp="1579881275467">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
-    <state width="1878" height="351" key="GridCell.Tab.0.left/0.23.1920.1096@0.23.1920.1096" timestamp="1579853640895" />
+    <state width="1878" height="351" key="GridCell.Tab.0.left/0.23.1920.1096@0.23.1920.1096" timestamp="1579881275467" />
     <state width="1878" height="372" key="GridCell.Tab.0.left/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911720" />
-    <state width="1878" height="351" key="GridCell.Tab.0.right" timestamp="1579853640896">
+    <state width="1878" height="351" key="GridCell.Tab.0.right" timestamp="1579881275467">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
-    <state width="1878" height="351" key="GridCell.Tab.0.right/0.23.1920.1096@0.23.1920.1096" timestamp="1579853640896" />
+    <state width="1878" height="351" key="GridCell.Tab.0.right/0.23.1920.1096@0.23.1920.1096" timestamp="1579881275467" />
     <state width="1878" height="372" key="GridCell.Tab.0.right/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911723" />
-    <state width="1878" height="371" key="GridCell.Tab.1.bottom" timestamp="1579708242635">
+    <state width="1878" height="371" key="GridCell.Tab.1.bottom" timestamp="1579874938064">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
-    <state width="1878" height="371" key="GridCell.Tab.1.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1579708242635" />
+    <state width="1878" height="371" key="GridCell.Tab.1.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1579874938064" />
     <state width="1878" height="372" key="GridCell.Tab.1.bottom/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911732" />
-    <state width="1878" height="371" key="GridCell.Tab.1.center" timestamp="1579708242635">
+    <state width="1878" height="371" key="GridCell.Tab.1.center" timestamp="1579874938064">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
-    <state width="1878" height="371" key="GridCell.Tab.1.center/0.23.1920.1096@0.23.1920.1096" timestamp="1579708242635" />
+    <state width="1878" height="371" key="GridCell.Tab.1.center/0.23.1920.1096@0.23.1920.1096" timestamp="1579874938064" />
     <state width="1878" height="372" key="GridCell.Tab.1.center/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911730" />
-    <state width="1878" height="371" key="GridCell.Tab.1.left" timestamp="1579708242635">
+    <state width="1878" height="371" key="GridCell.Tab.1.left" timestamp="1579874938063">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
-    <state width="1878" height="371" key="GridCell.Tab.1.left/0.23.1920.1096@0.23.1920.1096" timestamp="1579708242635" />
+    <state width="1878" height="371" key="GridCell.Tab.1.left/0.23.1920.1096@0.23.1920.1096" timestamp="1579874938063" />
     <state width="1878" height="372" key="GridCell.Tab.1.left/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911728" />
-    <state width="1878" height="371" key="GridCell.Tab.1.right" timestamp="1579708242635">
+    <state width="1878" height="371" key="GridCell.Tab.1.right" timestamp="1579874938064">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
-    <state width="1878" height="371" key="GridCell.Tab.1.right/0.23.1920.1096@0.23.1920.1096" timestamp="1579708242635" />
+    <state width="1878" height="371" key="GridCell.Tab.1.right/0.23.1920.1096@0.23.1920.1096" timestamp="1579874938064" />
     <state width="1878" height="372" key="GridCell.Tab.1.right/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911731" />
     <state x="501" y="233" key="Maven.ArtifactSearchDialog" timestamp="1575469439864">
       <screen x="0" y="23" width="1920" height="1098" />

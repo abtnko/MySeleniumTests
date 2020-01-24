@@ -12,35 +12,40 @@ public class RequestOffer extends BaseTests {
 
     @Test
     public void requestWithWrongName() throws IOException {
-        User user = User.Fake;
-        StartTrialPage startTrialPage = homePage.clickOnStartTrial();
-        RequestOfferPage requestOfferPage = startTrialPage.clickOnRequestOffer();
+        User userLetters = User.FakeWithLetters;
+        User userDigits = User.FakeWithDigits;
+        RequestOfferPage requestOfferPage = homePage.goToRequestOfferPage();
         delay(2);
-        requestOfferPage.setFirstName(user);
+        requestOfferPage.setFirstName(userLetters);
         delay(2);
-        requestOfferPage.checkErrorMessageForInvalidFirstName();
+        requestOfferPage.checkErrorMessageForInvalidFirstNameLetters();
+        requestOfferPage.setFirstName(userDigits);
+        delay(2);
+        requestOfferPage.checkErrorMessageForInvalidFirstNameDigits();
         validationTest.captureScreenShots();
     }
 
     @Test
     public void requestWithWrongSurname() throws IOException {
-        User user = User.Fake;
-        StartTrialPage startTrialPage = homePage.clickOnStartTrial();
-        RequestOfferPage requestOfferPage = startTrialPage.clickOnRequestOffer();
+        User userLetters = User.FakeWithLetters;
+        User userDigits = User.FakeWithDigits;
+        RequestOfferPage requestOfferPage = homePage.goToRequestOfferPage();
         delay(2);
-        requestOfferPage.setLastName(user);
+        requestOfferPage.setLastName(userLetters);
         delay(2);
-        requestOfferPage.checkErrorMessageForInvalidLastName();
+        requestOfferPage.checkErrorMessageForInvalidLastNameLetters();
+        requestOfferPage.setLastName(userDigits);
+        delay(2);
+        requestOfferPage.checkErrorMessageForInvalidLastNameDigits();
         validationTest.captureScreenShots();
     }
 
     @Test
     public void requestWithWrongEmail() throws IOException {
-        User user = User.Fake;
-        StartTrialPage startTrialPage = homePage.clickOnStartTrial();
-        RequestOfferPage requestOfferPage = startTrialPage.clickOnRequestOffer();
+        User userLetters = User.FakeWithLetters;
+        RequestOfferPage requestOfferPage = homePage.goToRequestOfferPage();
         delay(2);
-        requestOfferPage.setEmail(user);
+        requestOfferPage.setEmail(userLetters);
         delay(2);
         requestOfferPage.checkErrorMessageForInvalidEmail();
         validationTest.captureScreenShots();
@@ -48,11 +53,10 @@ public class RequestOffer extends BaseTests {
 
     @Test
     public void requestWithWrongPhone() throws IOException {
-        User user = User.Fake;
-        StartTrialPage startTrialPage = homePage.clickOnStartTrial();
-        RequestOfferPage requestOfferPage = startTrialPage.clickOnRequestOffer();
+        User userLetters = User.FakeWithLetters;
+        RequestOfferPage requestOfferPage = homePage.goToRequestOfferPage();
         delay(2);
-        requestOfferPage.setPhoneNumber(user);
+        requestOfferPage.setPhoneNumber(userLetters);
         delay(2);
         requestOfferPage.checkErrorMessageForInvalidPhoneNumber();
         validationTest.captureScreenShots();
@@ -61,8 +65,7 @@ public class RequestOffer extends BaseTests {
     @Test
     public void requestWithCorrectInputData() throws IOException {
         User user = User.Tom;
-        StartTrialPage startTrialPage = homePage.clickOnStartTrial();
-        RequestOfferPage requestOfferPage = startTrialPage.clickOnRequestOffer();
+        RequestOfferPage requestOfferPage = homePage.goToRequestOfferPage();
         delay(2);
         requestOfferPage.setFirstName(user);
         requestOfferPage.setLastName(user);
@@ -75,4 +78,6 @@ public class RequestOffer extends BaseTests {
         validationTest.captureScreenShots();
 
     }
+
+
 }

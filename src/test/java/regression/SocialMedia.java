@@ -16,7 +16,7 @@ public class SocialMedia extends BaseTests {
         socialMediaPages.checkFacebookPage();
     }
 
-//    @Test
+    @Test
     public void checkYouTube() {
         SocialMediaPages socialMediaPages = homePage.clickOnYoutubeLink();
         delay(5);
@@ -31,7 +31,7 @@ public class SocialMedia extends BaseTests {
 
     }
 
-//    @Test
+    @Test
     public void checkLinkedIn() throws  Exception{
         SocialMediaPages socialMediaPages = homePage.clickOnLinkedInLink();
         delay(5);

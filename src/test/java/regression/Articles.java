@@ -7,14 +7,14 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.AllNewsPage;
+import pages.MobileNewsPage;
 
 import java.util.List;
 
 public class Articles extends BaseTests {
 
 
-//    @Test
-//    Anton is fixing a bug
+    @Test
     public void checkSubcategoryFilter() throws InterruptedException {
         homePage.clickOnNewsMenu();
         delay(3);
@@ -28,16 +28,18 @@ public class Articles extends BaseTests {
     }
 
     @Test
-    public void checkDateCoverageWorksProperly(){
+    public void checkDateCoverage(){
         homePage.clickOnNewsMenu();
         delay(3);
-        AllNewsPage allNewsPage = homePage.openAllNewsPage();
+        MobileNewsPage mobileNewsPage = homePage.openMobileNewsPage();
         delay(2);
-        allNewsPage.setStartDate();
-        allNewsPage.setEndDate();
-        allNewsPage.clickOnFilterButton();
-        delay(2);
-//        allNewsPage.checkArticlesAreInRangeOfChosenDates();
+        mobileNewsPage.setStartDate("01/01/2019");
+        mobileNewsPage.setEndDate("05/01/2019");
+        mobileNewsPage.clickOnDateCoverageTitle();
+        mobileNewsPage.clickOnFilterButton();
+        delay(3);
+        mobileNewsPage.checkArticlesAreWithCorrectDates("03 Jan 2019");
+        mobileNewsPage.checkArticlesAreWithCorrectDates("02 Jan 2019");
     }
 
 }

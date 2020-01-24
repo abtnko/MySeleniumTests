@@ -18,11 +18,11 @@ public class AllNewsPage {
     private By all = By.id("ch-all");
     private By adobe = By.id("adobe");
     private By filter = By.id("filter-button");
-    private By listOfArticles = By.id("child-of-container");
+    private By listOfArticles = By.xpath("//div[@id='child-of-container'][2]");
     final String ADOBE = "Adobe";
     private By enableFilter = By.xpath("//input[@id='datepicker-control-input']");
-    private By startDate = By.xpath("//input[@placeholder='Select start date']");
-    private By endDate = By.xpath("//input[@placeholder='Select end date']");
+    private By searchBar = By.id("searchbar");
+    private By searchButton = By.xpath("//input[@type='submit']");
 
 
     public AllNewsPage (WebDriver driver){
@@ -41,20 +41,6 @@ public class AllNewsPage {
 //        Assert.assertTrue(driver.findElements(listOfArticles).contains(firstDayOfWeek));
 //    }
 
-    public void setEndDate(){
-        Date date = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        String currentDay = dateFormat.format(date);
-        driver.findElement(startDate).sendKeys(currentDay);
-    }
-
-    public void setStartDate(){
-        Calendar c1 = Calendar.getInstance();
-        int date = c1.getFirstDayOfWeek();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        String firstDayOfWeek = dateFormat.format(date);
-        driver.findElement(endDate).sendKeys(firstDayOfWeek);
-    }
 
 
     public void uncheckAllSubcategory(){
@@ -70,11 +56,28 @@ public class AllNewsPage {
     }
 
     public void checkOnlyAdobeArticlesAreDisplayed(){
-        List<WebElement> allArticles = driver.findElements(listOfArticles);
+        List<WebElement> allArticles = (List<WebElement>) driver.findElements(listOfArticles);
         for (WebElement article : allArticles) {
             String name = article.getText();
             System.out.println(name);
             Assert.assertTrue(name.contains(ADOBE));
         }
+    }
+
+    public void checkArticlesContainKeyword(String keyword){
+        List<WebElement> allArticles = driver.findElements(listOfArticles);
+        for (WebElement article : allArticles) {
+            String name = article.getText();
+            System.out.println(name);
+            Assert.assertTrue(name.contains(keyword));
+        }
+    }
+
+    public void searchWithKeyword(String keyword){
+        driver.findElement(searchBar).sendKeys(keyword);
+    }
+
+    public void clickOnSearchButton(){
+        driver.findElement(searchButton).click();
     }
 }

@@ -1,68 +1,78 @@
 package regression;
 
-import base.TestBase;
-import model.User;
-import org.junit.Assert;
+import base.BaseTests;
+import base.User;
 import org.junit.Test;
-import org.openqa.selenium.By;
+import pages.RequestOfferPage;
+import pages.StartTrialPage;
 
-public class RequestOffer extends TestBase {
+import java.io.IOException;
+
+public class RequestOffer extends BaseTests {
 
     @Test
-    public void requestWithWrongName() {
-//        driver.findElement(By.xpath("//*[contains(text(), ' Start Trial')]")).click();
-//        delay(3);
-//        driver.findElement(By.xpath("//*[contains(text(), 'Request an offer.')]")).click();
-        driver.get("https://www.insightportal.io/subscribe/request-offer");
-        delay(3);
-        driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/input")).sendKeys("A");
-        delay(3);
-        Assert.assertTrue(driver.findElements(By.className("help-block")).get(0).getText().equals("The first name field must be at least 2 characters."));
-        Assert.assertFalse(driver.findElement(By.id("save-button")).isEnabled());
+    public void requestWithWrongName() throws IOException {
+        User user = User.Fake;
+        StartTrialPage startTrialPage = homePage.clickOnStartTrial();
+        RequestOfferPage requestOfferPage = startTrialPage.clickOnRequestOffer();
+        delay(2);
+        requestOfferPage.setFirstName(user);
+        delay(2);
+        requestOfferPage.checkErrorMessageForInvalidFirstName();
+        validationTest.captureScreenShots();
     }
 
     @Test
-    public void requestWithWrongSurname() {
-//        driver.findElement(By.xpath("//*[contains(text(), ' Start Trial')]")).click();
-//        delay(3);
-//        driver.findElement(By.xpath("//*[contains(text(), 'Request an offer.')]")).click();
-        driver.get("https://www.insightportal.io/subscribe/request-offer");
-        delay(3);
-        driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[2]/input")).sendKeys("A");
-        delay(3);
-        Assert.assertTrue(driver.findElements(By.className("help-block")).get(1).getText().equals("The last name field must be at least 2 characters."));
-        Assert.assertFalse(driver.findElement(By.id("save-button")).isEnabled());
+    public void requestWithWrongSurname() throws IOException {
+        User user = User.Fake;
+        StartTrialPage startTrialPage = homePage.clickOnStartTrial();
+        RequestOfferPage requestOfferPage = startTrialPage.clickOnRequestOffer();
+        delay(2);
+        requestOfferPage.setLastName(user);
+        delay(2);
+        requestOfferPage.checkErrorMessageForInvalidLastName();
+        validationTest.captureScreenShots();
     }
 
     @Test
-    public void requestWithWrongEmail() {
-        driver.get("https://www.insightportal.io/subscribe/request-offer");
-        delay(3);
-        driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[3]/input")).sendKeys("a@y.");
-        Assert.assertTrue(driver.findElements(By.className("help-block")).get(2).getText().equals("The email field must be a valid email."));
-
+    public void requestWithWrongEmail() throws IOException {
+        User user = User.Fake;
+        StartTrialPage startTrialPage = homePage.clickOnStartTrial();
+        RequestOfferPage requestOfferPage = startTrialPage.clickOnRequestOffer();
+        delay(2);
+        requestOfferPage.setEmail(user);
+        delay(2);
+        requestOfferPage.checkErrorMessageForInvalidEmail();
+        validationTest.captureScreenShots();
     }
 
     @Test
-    public void requestWithWrongPhone() {
-        driver.get("https://www.insightportal.io/subscribe/request-offer");
-        delay(3);
-        driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[4]/div/input")).sendKeys("+48 531 055 94");
-        Assert.assertTrue(driver.findElements(By.className("help-block")).get(3).getText().equals("Phone number is not a valid"));
-
+    public void requestWithWrongPhone() throws IOException {
+        User user = User.Fake;
+        StartTrialPage startTrialPage = homePage.clickOnStartTrial();
+        RequestOfferPage requestOfferPage = startTrialPage.clickOnRequestOffer();
+        delay(2);
+        requestOfferPage.setPhoneNumber(user);
+        delay(2);
+        requestOfferPage.checkErrorMessageForInvalidPhoneNumber();
+        validationTest.captureScreenShots();
     }
 
     @Test
-    public void requestWithCorrectInputData() {
+    public void requestWithCorrectInputData() throws IOException {
         User user = User.Tom;
-        driver.get("https://www.insightportal.io/subscribe/request-offer");
+        StartTrialPage startTrialPage = homePage.clickOnStartTrial();
+        RequestOfferPage requestOfferPage = startTrialPage.clickOnRequestOffer();
+        delay(2);
+        requestOfferPage.setFirstName(user);
+        requestOfferPage.setLastName(user);
+        requestOfferPage.setEmail(user);
+        requestOfferPage.setPhoneNumber(user);
+        requestOfferPage.clickOnRequestOfferButton();
         delay(3);
-        driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/input")).sendKeys(user.getName());
-        driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[2]/input")).sendKeys(user.getSurname());
-        driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[3]/input")).sendKeys(user.getEmail());
-        driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[4]/div/input")).sendKeys(user.getPhoneNumber());
-        driver.findElement(By.id("save-button")).click();
-        Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"swal2-title\"]")).getText().equals("Your request has been sent successfully."));
+        requestOfferPage.checkPresenceOfPopUp();
+        delay(2);
+        validationTest.captureScreenShots();
 
     }
 }

@@ -1,10 +1,14 @@
 package regression;
 
-import base.TestBase;
-import model.User;
+import base.BaseTests;
+import base.User;
+import net.bytebuddy.pool.TypePool;
 import org.junit.*;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.*;
+import pages.CloudAdvisorPage;
+import pages.DashboardPage;
+import pages.LoginPage;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -12,311 +16,339 @@ import java.util.List;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
-public class CloudAdvisor extends TestBase {
+public class CloudAdvisor extends BaseTests {
+
+    final String DEVICE_ON_MANAGE = "Alcatel";
+    final String DEVICE_ON_OVERVIEW = "Alcatel U5";
+    final String FULL_DEVICE_NAME = "7 Alcatel U5 Android 9.1  63";
+    final String TASK = "Meizu X8 5 Update Firefox 69 to Firefox 71 2019-12-12";
+    final String DEVICE_NAME = "BlackBerry Evolve X";
+
 
     @Test
-    public void A_addNewDeviceManually(){
+    public void A_addNewDeviceManuallyAndCheck() throws InterruptedException{
         User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
-        delay(5);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
-        delay(3);
-        driver.findElement(By.xpath("//span[contains(text(), 'Manage')]")).click();
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
         delay(1);
-        driver.findElement(By.className("add-slot-buttonq")).click();
-        driver.findElements(By.id("over-select")).get(1).click();
+        loginPage.setCorrectPassword(user);
         delay(1);
-        driver.findElement(By.xpath("//*[@title='Alcatel']")).click();
-        driver.findElements(By.id("over-select")).get(2).click();
-        delay(1);
-        driver.findElement(By.xpath("//*[@title='U5']")).click();
-        driver.findElements(By.id("over-select")).get(3).click();
-        delay(1);
-        driver.findElement(By.xpath("//*[@title='Android 9.1']")).click();
-        driver.findElements(By.id("over-select")).get(4).click();
-        delay(1);
-        driver.findElement(By.xpath("//*[@title='Opera 63']")).click();
-        driver.findElement(By.className("add-slot-button")).click();
-        driver.findElement(By.className("add-slot-button")).click();
+        loginPage.clickLoginButton();
         delay(2);
-        driver.findElement(By.xpath("//button[contains(text(), 'OK')]")).click();
-        System.out.println("Device is added");
+        homePage.clickOnTools();
+        delay(2);
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(3);
+        cloudAdvisorPage.goToManageTab();
+        cloudAdvisorPage.clickOnSlotButton();
+        cloudAdvisorPage.addSlot();
+        delay(3);
+        cloudAdvisorPage.dismissPopUp();
+        delay(3);
+        cloudAdvisorPage.goToNextPage();
+        delay(3);
+        cloudAdvisorPage.checkDeviceIsAdded(DEVICE_ON_MANAGE);
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        delay(1);
+        dashboardPage.logOut();
+    }
+
+
+    @Test
+    public void B_checkDeviceOnOverviewScreen (){
+        User user = User.Tom;
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        delay(1);
+        loginPage.setCorrectPassword(user);
+        delay(1);
+        loginPage.clickLoginButton();
+        delay(2);
+        homePage.clickOnTools();
+        delay(2);
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
+        delay(2);
+        cloudAdvisorPage.goToNextPage();
+        delay(2);
+        cloudAdvisorPage.checkDeviceIsAdded(DEVICE_ON_OVERVIEW);
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
     }
 
     @Test
-    public void B_checkDeviceOnManageScreen (){
+    public void E_deleteDevice() throws InterruptedException {
         User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
-        delay(3);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
-        delay(3);
-        driver.findElement(By.xpath("//span[contains(text(), 'Manage')]")).click();
-        delay(3);
-        driver.findElement(By.xpath("//*[@id=\"cloudadvisor-container\"]/div[2]/div/div[3]/input[2]")).click();
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        delay(1);
+        loginPage.setCorrectPassword(user);
+        delay(1);
+        loginPage.clickLoginButton();
         delay(2);
-        String device = "Alcatel";
-        List<WebElement> allArticles2 = driver.findElements(By.className("table-parent"));
-        for (WebElement article : allArticles2) {
-            String name = article.getText();
-            System.out.println(name);
-            Assert.assertTrue(name.contains(device));
-        }
-        delay(3);
-    }
-
-    @Test
-    public void C_checkDeviceOnOverviewScreen (){
-        User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
-        delay(3);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
-        delay(3);
-        driver.findElement(By.xpath("//*[@id=\"cloudadvisor-container\"]/div[2]/div[2]/div[2]/input[2]")).click();
+        homePage.clickOnTools();
         delay(2);
-        String device = "Alcatel U5";
-        List<WebElement> allArticles2 = driver.findElements(By.className("table-parent"));
-        for (WebElement article : allArticles2) {
-            String name = article.getText();
-            System.out.println(name);
-            Assert.assertTrue(name.contains(device));
-        }
-        delay(3);
-    }
-
-    @Test
-    public void D_deleteDevice() {
-        User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
+        cloudAdvisorPage.goToManageTab();
         delay(2);
-        driver.findElement(By.xpath("//span[contains(text(), 'Manage')]")).click();
+        cloudAdvisorPage.goToNextPage();
         delay(2);
-        driver.findElement(By.xpath("//*[@id=\"cloudadvisor-container\"]/div[2]/div/div[3]/input[2]")).click();
-        delay(3);
-//        Deleting device, but before checking if deleting correct row
-        String device = "7 Alcatel U5 Android 9.1  63";
-        List<WebElement> allArticles = driver.findElements(By.xpath("//*[@id=\"cloudadvisor-container\"]/div[2]/div/div[2]/table/tr[2]"));
-        for (WebElement article : allArticles) {
-            String name = article.getText();
-            Assert.assertTrue(name.contains(device));
-        }
-        driver.findElement(By.xpath("//*[@id=\"cloudadvisor-container\"]/div[2]/div/div[2]/table/tr[2]/td[6]/tr[2]/button")).click();
-        delay(3);
-        driver.findElement(By.xpath("//button[contains(text(), 'OK')]")).click();
-        String device2 = "Alcatel";
-        List<WebElement> allArticles2 = driver.findElements(By.className("table-parent"));
-        for (WebElement article : allArticles2) {
-            String name = article.getText();
-            Assert.assertFalse(name.contains(device2));
-        }
-        delay(3);
+        cloudAdvisorPage.checkDeviceSlotBeforeDelete(FULL_DEVICE_NAME);
+        cloudAdvisorPage.deleteSlot();
+        delay(2);
+        cloudAdvisorPage.dismissPopUp();
+        delay(2);
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
     }
 
     @Test
     public void tasksArePresent(){
         User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        delay(1);
+        loginPage.setCorrectPassword(user);
+        delay(1);
+        loginPage.clickLoginButton();
         delay(2);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
+        homePage.clickOnTools();
         delay(2);
-        driver.findElement(By.xpath("//div[contains(text(), 'Task Generator')]")).click();
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
-        Assert.assertTrue(driver.findElement(By.className("task-table-container")).isDisplayed());
-
+        cloudAdvisorPage.goToTasksTab();
+        delay(2);
+        cloudAdvisorPage.checkTasksTableIsDisplayed();
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
     }
 
     @Test
-    public void archiveAndRestoreTask(){
+    public void C_archiveTask(){
         User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        delay(1);
+        loginPage.setCorrectPassword(user);
+        delay(1);
+        loginPage.clickLoginButton();
         delay(2);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
+        homePage.clickOnTools();
         delay(2);
-        driver.findElement(By.xpath("//span[contains(text(), 'Task Generator')]")).click();
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
-        String device = "LG Q7 1 Replace with Huawei P20 on Android 8.1 2019-12-19";
-        List<WebElement> allArticles = driver.findElements(By.id("task-table-container"));
-        for (WebElement article : allArticles) {
-            String name = article.getText();
-            Assert.assertTrue(name.contains(device));
-        }
-        driver.findElement(By.xpath("//div[@title='Archive Task']")).click();
+        cloudAdvisorPage.goToTasksTab();
         delay(2);
-        for (WebElement article : allArticles) {
-            String name = article.getText();
-            Assert.assertFalse(name.contains(device));
-        }
-        driver.findElement(By.xpath("//span[contains(text(), 'Archive')]")).click();
+        cloudAdvisorPage.expandTable();
+        cloudAdvisorPage.checkTaskIsPresentInTasksTable(TASK);
+        cloudAdvisorPage.archiveTask();
         delay(2);
-        driver.findElement(By.xpath("//div[@title='Restore Task']")).click();
-        driver.findElement(By.xpath("//span[contains(text(), 'Task Generator')]")).click();
-        delay(2);
-        List<WebElement> allArticles2 = driver.findElements(By.id("task-table-container"));
-        for (WebElement article : allArticles2) {
-            String name = article.getText();
-            Assert.assertTrue(name.contains(device));
-        }
+        cloudAdvisorPage.checkArchivedTaskIsNotInTable(TASK);
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
     }
+
+    @Test
+    public void D_restoreTask() {
+        User user = User.Tom;
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        delay(1);
+        loginPage.setCorrectPassword(user);
+        delay(1);
+        loginPage.clickLoginButton();
+        delay(2);
+        homePage.clickOnTools();
+        delay(2);
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
+        delay(2);
+        cloudAdvisorPage.goToArchiveTab();
+        delay(2);
+        cloudAdvisorPage.restoreTask();
+        cloudAdvisorPage.goToTasksTab();
+        delay(2);
+        cloudAdvisorPage.expandTable();
+        delay(2);
+        cloudAdvisorPage.checkTaskIsPresentInTasksTable(TASK);
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
+
+    }
+
 
     @Test
     public void prioritizeTask(){
         User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        delay(1);
+        loginPage.setCorrectPassword(user);
+        delay(1);
+        loginPage.clickLoginButton();
         delay(2);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
+        homePage.clickOnTools();
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
-        driver.findElement(By.xpath("//span[contains(text(), 'Task Generator')]")).click();
+        cloudAdvisorPage.goToTasksTab();
         delay(2);
-        String exp1 = "1. LG Q7 1 Replace with Huawei P20 on Android 8.1 2019-12-19";
-        String act = driver.findElements(By.id("task")).get(0).getText();
-        System.out.println(act);
-        Assert.assertTrue(driver.findElements(By.id("task")).get(0).getText().equals(exp1));
-        driver.findElement(By.xpath("//div[@title='Deprioritise Task']")).click();
-        String exp2 = "1. ZTE T6 2 Replace with Huawei P20 on Android 8.1 2019-12-19";
-        Assert.assertTrue(driver.findElements(By.id("task")).get(0).getText().equals(exp2));
-        driver.findElements(By.xpath("//div[@title='Prioritise Task']")).get(1).click();
-        Assert.assertTrue(driver.findElements(By.id("task")).get(0).getText().equals(exp1));
+        cloudAdvisorPage.checkDeviceInFirstRow(DEVICE_NAME);
+        cloudAdvisorPage.clickOnDeprioritiseTask();
+        delay(2);
+        cloudAdvisorPage.checkDeviceInSecondRow(DEVICE_NAME);
+        cloudAdvisorPage.clickOnPrioritiseTask();
+        delay(2);
+        cloudAdvisorPage.checkDeviceInFirstRow(DEVICE_NAME);
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
     }
 
     @Test
     public void E_completeTask() {
         User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        delay(1);
+        loginPage.setCorrectPassword(user);
+        delay(1);
+        loginPage.clickLoginButton();
         delay(2);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
+        homePage.clickOnTools();
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
-        driver.findElement(By.xpath("//span[contains(text(), 'Task Generator')]")).click();
+        cloudAdvisorPage.goToTasksTab();
         delay(2);
-        System.out.println("Before Complete: " + driver.findElements(By.id("task")).get(0).getText());
-        driver.findElements(By.xpath("//div[@title='Edit Task']")).get(0).click();
+        cloudAdvisorPage.clickOnEditButton();
         delay(2);
-        driver.findElement(By.xpath("//*[@id=\"edit-action\"]/select/option[2]")).click();
+        cloudAdvisorPage.chooseCompleteTask();
+        cloudAdvisorPage.saveChanges();
         delay(2);
-        driver.findElement(By.xpath("//button[contains(text(), 'Save')]")).click();
-        delay(3);
-        System.out.println("After Complete: " + driver.findElements(By.id("task")).get(0).getText());
-        Assert.assertTrue(driver.findElements(By.id("task")).get(0).getText().equals("1. Huawei P20 2 Replace with Huawei P20 on Android 8.1 COMPLETED      "));
-
+        cloudAdvisorPage.checkTaskStatusIsCompleted();
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
     }
 
     @Test
     public void F_ignoreTask() {
         User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        delay(1);
+        loginPage.setCorrectPassword(user);
+        delay(1);
+        loginPage.clickLoginButton();
         delay(2);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
+        homePage.clickOnTools();
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
-        driver.findElement(By.xpath("//span[contains(text(), 'Task Generator')]")).click();
+        cloudAdvisorPage.goToTasksTab();
         delay(2);
-        System.out.println("Before ignore: " + driver.findElements(By.id("task")).get(0).getText());
-        driver.findElements(By.xpath("//div[@title='Edit Task']")).get(0).click();
+        cloudAdvisorPage.clickOnEditButton();
         delay(2);
-        driver.findElement(By.xpath("//*[@id=\"edit-action\"]/select/option[3]")).click();
+        cloudAdvisorPage.chooseIgnoreTask();
         delay(2);
-        driver.findElement(By.xpath("//input[@placeholder='Enter a comment...']")).sendKeys("Postponed");
-        driver.findElement(By.xpath("//button[contains(text(), 'Save')]")).click();
+        cloudAdvisorPage.saveChanges();
         delay(2);
-        System.out.println("After ignore: " + driver.findElements(By.id("task")).get(0).getText());
-        Assert.assertTrue(driver.findElements(By.id("task")).get(0).getText().equals("1. Huawei P20 2 Replace with Huawei P20 on Android 8.1 IGNORED      "));
+        cloudAdvisorPage.checkTaskStatusIsIgnored();
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
     }
 
     @Test
     public void G_delayTask() {
         User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        delay(1);
+        loginPage.setCorrectPassword(user);
+        delay(1);
+        loginPage.clickLoginButton();
         delay(2);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
+        homePage.clickOnTools();
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
-        driver.findElement(By.xpath("//span[contains(text(), 'Task Generator')]")).click();
+        cloudAdvisorPage.goToTasksTab();
         delay(2);
-        System.out.println("Before delay: " + driver.findElements(By.id("task")).get(0).getText());
-        driver.findElements(By.xpath("//div[@title='Edit Task']")).get(0).click();
+        cloudAdvisorPage.clickOnEditButton();
+        cloudAdvisorPage.chooseDelayTask();
         delay(2);
-        driver.findElement(By.xpath("//*[@id=\"edit-action\"]/select/option[4]")).click();
+        cloudAdvisorPage.setDateInCalendar();
+        cloudAdvisorPage.saveChanges();
         delay(2);
-        WebElement selectDate = driver.findElement(By.xpath("//input[@placeholder='Select start date']"));
-        selectDate.clear();
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = new Date();
-        String currentDay = dateFormat.format(date);
-        System.out.println(currentDay);
-        selectDate.sendKeys(currentDay + Keys.ENTER);
-        delay(2);
-        driver.findElement(By.xpath("//button[contains(text(), 'Save')]")).click();
-        delay(2);
-        System.out.println("After delay: " + driver.findElements(By.id("task")).get(0).getText());
-        Assert.assertTrue(driver.findElements(By.id("task")).get(0).getText().equals("1. Huawei P20 2 Replace with Huawei P20 on Android 8.1 " + currentDay + "      "));
+        cloudAdvisorPage.checkTaskStatusIsDelayed();
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
     }
 
 
     @Test
     public void checkWhenMoreThanFiveDevices(){
         User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        delay(1);
+        loginPage.setCorrectPassword(user);
+        delay(1);
+        loginPage.clickLoginButton();
         delay(2);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
+        homePage.clickOnTools();
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
-        String allDevicesOnPageOne = "SlotDeviceMarket share 1  LG Q7 Android 8.1 0.06%2  ZTE T6 Android 6.1 no data3  SonyEricsson Xperia X10 Android 9.0 no data4  BlackBerry Evolve X Android 9.0 no data5  Samsung Galaxy S7 Android 7.1 no data";
-        List<WebElement> allArticles = driver.findElements(By.className("slots-data-table"));
-        for (WebElement article : allArticles) {
-            String name = article.getText();
-            System.out.println(name);
-            Assert.assertTrue(name.contains(allDevicesOnPageOne));
-        }
-        driver.findElement(By.xpath("//*[@id=\"cloudadvisor-container\"]/div[2]/div[2]/div[2]/input[2]")).click();
-        delay(3);
-        String allDevicesOnPageTwo = "SlotDeviceMarket share 6  BlackBerry Key 2 Android 9.0 no data";
-        for (WebElement article : allArticles) {
-            String name = article.getText();
-            System.out.println(name);
-            Assert.assertTrue(name.contains(allDevicesOnPageTwo));
-        }
+        cloudAdvisorPage.checkOverviewWithMoreThanFiveDevices("5");
+        cloudAdvisorPage.goToNextPage();
+        delay(2);
+        cloudAdvisorPage.checkOverviewWithMoreThanFiveDevices("6");
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
     }
 
     @Test
-    public void editSlot(){
+    public void editSlot() throws InterruptedException{
         User user = User.Tom;
-        logIn(user);
-        driver.findElement(By.className("tools")).click();
-        delay(2);
-        driver.findElement(By.xpath("//div[contains(text(), 'CloudAdvisor')]")).click();
-        delay(2);
-        driver.findElement(By.xpath("//span[contains(text(), 'Manage')]")).click();
-        delay(2);
-        Assert.assertTrue(driver.findElements(By.className("model-table")).get(0).getText().equals("Q7"));
-        driver.findElement(By.xpath("//*[@id=\"cloudadvisor-container\"]/div[2]/div/div[2]/table/tr[1]/td[6]/tr[1]/button")).click();
-        delay(2);
-        driver.findElements(By.id("over-select")).get(2).click();
+        homePage.dismissCookiesBanner();
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
         delay(1);
-        driver.findElement(By.xpath("//*[@title='X4']")).click();
-        driver.findElement(By.xpath("//*[@id=\"cloudadvisor-container\"]/div[2]/div/div[2]/table/tr[1]/td[6]/tr[1]/button")).click();
-        delay(2);
-        driver.findElement(By.xpath("//button[contains(text(), 'OK')]")).click();
-        Assert.assertTrue(driver.findElements(By.className("model-table")).get(0).getText().equals("X4"));
-        delay(2);
-        driver.findElement(By.xpath("//*[@id=\"cloudadvisor-container\"]/div[2]/div/div[2]/table/tr[1]/td[6]/tr[1]/button")).click();
-        delay(2);
-        driver.findElements(By.id("over-select")).get(2).click();
+        loginPage.setCorrectPassword(user);
         delay(1);
-        driver.findElement(By.xpath("//*[@title='Q7']")).click();
-        driver.findElement(By.xpath("//*[@id=\"cloudadvisor-container\"]/div[2]/div/div[2]/table/tr[1]/td[6]/tr[1]/button")).click();
+        loginPage.clickLoginButton();
         delay(2);
-        driver.findElement(By.xpath("//button[contains(text(), 'OK')]")).click();
-
+        homePage.clickOnTools();
+        CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
+        delay(2);
+        cloudAdvisorPage.goToManageTab();
+        delay(2);
+        cloudAdvisorPage.clickOnEditSlotButton();
+        delay(2);
+        cloudAdvisorPage.changeDeviceModelToNew();
+        delay(2);
+        cloudAdvisorPage.saveChangesOnSlot();
+        delay(2);
+        cloudAdvisorPage.dismissPopUp();
+        delay(2);
+        cloudAdvisorPage.checkDeviceModelIsChanged("Iconia Tab 10");
+        delay(2);
+        cloudAdvisorPage.clickOnEditSlotButton();
+        delay(2);
+        cloudAdvisorPage.changeDeviceModelToOld();
+        delay(2);
+        cloudAdvisorPage.saveChangesOnSlot();
+        delay(2);
+        cloudAdvisorPage.dismissPopUp();
+        delay(2);
+        cloudAdvisorPage.checkDeviceModelIsChanged("Iconia One 8");
+        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        dashboardPage.logOut();
     }
-
 
  }

@@ -2,41 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be8695b7-5190-4b7d-920e-f04c33151b02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InsightPortal-DesktopSafari.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/regression/Articles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/regression/ChangePassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/regression/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/regression/SearchBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/regression/SocialMedia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/regression/StartTrial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/base/TestBase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/regression/Articles.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/regression/ChangePassword.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/regression/CloudAdvisor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/regression/Login.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/regression/RequestOffer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/regression/SearchBar.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/regression/SocialMedia.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/regression/StartTrial.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/changeInCorrectFormat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/changeLessThan8Characters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/changeOnlyDigits.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/changeOnlyLetters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/changeWhenTwoDifferent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Validations/logInWithCorrectCredentials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/base/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/base/ValidationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AllNewsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CloudAdvisorPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RequestOfferPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SocialMediaPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/StartTrialPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/regression/CookiesBanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/Articles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/Articles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/ChangePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/ChangePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/SearchBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/SearchBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/SocialMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/SocialMedia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/StartTrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/StartTrial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/safari-desktop.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/TestBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/Articles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/Articles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/ChangePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/ChangePassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/CloudAdvisor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/CloudAdvisor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/RequestOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/RequestOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/SearchBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/SearchBar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/SocialMedia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/SocialMedia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/StartTrial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/StartTrial.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="InsightPortal-DesktopSafari" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,29 +76,25 @@
     </option>
   </component>
   <component name="ProjectId" id="1Tbbce0oJBRV4DZAedgFvHejQd8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.Articles.checkSubcategoryFilter">
+  <component name="RunManager" selected="JUnit.ChangePassword.changeOnlyDigits">
     <configuration name="Articles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="safari-desktop" />
+      <module name="InsightPortal-DesktopSafari" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="regression.*" />
@@ -93,126 +108,90 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Articles.checkSubcategoryFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="safari-desktop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.Articles" />
-      <option name="METHOD_NAME" value="checkSubcategoryFilter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CloudAdvisor.E_completeTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="safari-desktop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.CloudAdvisor" />
-      <option name="METHOD_NAME" value="E_completeTask" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CloudAdvisor.F_ignoreTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="safari-desktop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.CloudAdvisor" />
-      <option name="METHOD_NAME" value="F_ignoreTask" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CloudAdvisor.G_delayTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="safari-desktop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.CloudAdvisor" />
-      <option name="METHOD_NAME" value="G_delayTask" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration name="ChangePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InsightPortal-DesktopSafari" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.ChangePassword" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration name="ChangePassword.changeInCorrectFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InsightPortal-DesktopSafari" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.ChangePassword" />
+      <option name="METHOD_NAME" value="changeInCorrectFormat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChangePassword.changeOnlyDigits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InsightPortal-DesktopSafari" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.ChangePassword" />
+      <option name="METHOD_NAME" value="changeOnlyDigits" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChangePassword.changeOnlyLetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InsightPortal-DesktopSafari" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.ChangePassword" />
+      <option name="METHOD_NAME" value="changeOnlyLetters" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Articles.checkSubcategoryFilter" />
+        <item itemvalue="JUnit.ChangePassword.changeOnlyDigits" />
+        <item itemvalue="JUnit.ChangePassword.changeInCorrectFormat" />
+        <item itemvalue="JUnit.ChangePassword.changeOnlyLetters" />
+        <item itemvalue="JUnit.ChangePassword" />
         <item itemvalue="JUnit.Articles" />
-        <item itemvalue="JUnit.CloudAdvisor.G_delayTask" />
-        <item itemvalue="JUnit.CloudAdvisor.F_ignoreTask" />
-        <item itemvalue="JUnit.CloudAdvisor.E_completeTask" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -239,5 +218,82 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="237" key="#Project_Structure" timestamp="1575452172290">
+      <screen x="0" y="23" width="1920" height="1098" />
+    </state>
+    <state x="560" y="237" key="#Project_Structure/0.23.1920.1098@0.23.1920.1098" timestamp="1575452172290" />
+    <state x="92" y="125" width="1720" height="898" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1576507485520">
+      <screen x="0" y="23" width="1920" height="1098" />
+    </state>
+    <state x="92" y="125" width="1720" height="898" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1576507485520" />
+    <state x="391" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575473030619">
+      <screen x="0" y="23" width="1920" height="1098" />
+    </state>
+    <state x="391" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1575473030619" />
+    <state width="1878" height="351" key="GridCell.Tab.0.bottom" timestamp="1579853640897">
+      <screen x="0" y="23" width="1920" height="1096" />
+    </state>
+    <state width="1878" height="351" key="GridCell.Tab.0.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1579853640897" />
+    <state width="1878" height="372" key="GridCell.Tab.0.bottom/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911726" />
+    <state width="1878" height="351" key="GridCell.Tab.0.center" timestamp="1579853640896">
+      <screen x="0" y="23" width="1920" height="1096" />
+    </state>
+    <state width="1878" height="351" key="GridCell.Tab.0.center/0.23.1920.1096@0.23.1920.1096" timestamp="1579853640896" />
+    <state width="1878" height="372" key="GridCell.Tab.0.center/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911721" />
+    <state width="1878" height="351" key="GridCell.Tab.0.left" timestamp="1579853640895">
+      <screen x="0" y="23" width="1920" height="1096" />
+    </state>
+    <state width="1878" height="351" key="GridCell.Tab.0.left/0.23.1920.1096@0.23.1920.1096" timestamp="1579853640895" />
+    <state width="1878" height="372" key="GridCell.Tab.0.left/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911720" />
+    <state width="1878" height="351" key="GridCell.Tab.0.right" timestamp="1579853640896">
+      <screen x="0" y="23" width="1920" height="1096" />
+    </state>
+    <state width="1878" height="351" key="GridCell.Tab.0.right/0.23.1920.1096@0.23.1920.1096" timestamp="1579853640896" />
+    <state width="1878" height="372" key="GridCell.Tab.0.right/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911723" />
+    <state width="1878" height="371" key="GridCell.Tab.1.bottom" timestamp="1579708242635">
+      <screen x="0" y="23" width="1920" height="1096" />
+    </state>
+    <state width="1878" height="371" key="GridCell.Tab.1.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1579708242635" />
+    <state width="1878" height="372" key="GridCell.Tab.1.bottom/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911732" />
+    <state width="1878" height="371" key="GridCell.Tab.1.center" timestamp="1579708242635">
+      <screen x="0" y="23" width="1920" height="1096" />
+    </state>
+    <state width="1878" height="371" key="GridCell.Tab.1.center/0.23.1920.1096@0.23.1920.1096" timestamp="1579708242635" />
+    <state width="1878" height="372" key="GridCell.Tab.1.center/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911730" />
+    <state width="1878" height="371" key="GridCell.Tab.1.left" timestamp="1579708242635">
+      <screen x="0" y="23" width="1920" height="1096" />
+    </state>
+    <state width="1878" height="371" key="GridCell.Tab.1.left/0.23.1920.1096@0.23.1920.1096" timestamp="1579708242635" />
+    <state width="1878" height="372" key="GridCell.Tab.1.left/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911728" />
+    <state width="1878" height="371" key="GridCell.Tab.1.right" timestamp="1579708242635">
+      <screen x="0" y="23" width="1920" height="1096" />
+    </state>
+    <state width="1878" height="371" key="GridCell.Tab.1.right/0.23.1920.1096@0.23.1920.1096" timestamp="1579708242635" />
+    <state width="1878" height="372" key="GridCell.Tab.1.right/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911731" />
+    <state x="501" y="233" key="Maven.ArtifactSearchDialog" timestamp="1575469439864">
+      <screen x="0" y="23" width="1920" height="1098" />
+    </state>
+    <state x="501" y="233" key="Maven.ArtifactSearchDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1575469439864" />
+    <state x="447" y="153" key="SettingsEditor" timestamp="1575971501536">
+      <screen x="0" y="23" width="1920" height="1098" />
+    </state>
+    <state x="447" y="153" key="SettingsEditor/0.23.1920.1098@0.23.1920.1098" timestamp="1575971501536" />
+    <state x="640" y="328" width="782" height="550" key="find.popup" timestamp="1579852806592">
+      <screen x="0" y="23" width="1920" height="1096" />
+    </state>
+    <state x="640" y="328" width="782" height="550" key="find.popup/0.23.1920.1096@0.23.1920.1096" timestamp="1579852806592" />
+    <state x="717" y="286" key="new project wizard" timestamp="1576579248752">
+      <screen x="0" y="23" width="1920" height="1098" />
+    </state>
+    <state x="717" y="286" key="new project wizard/0.23.1920.1098@0.23.1920.1098" timestamp="1576579248752" />
+    <state x="622" y="272" width="670" height="676" key="search.everywhere.popup" timestamp="1575553014780">
+      <screen x="0" y="23" width="1920" height="1098" />
+    </state>
+    <state x="622" y="272" width="670" height="676" key="search.everywhere.popup/0.23.1920.1098@0.23.1920.1098" timestamp="1575553014780" />
   </component>
 </project>

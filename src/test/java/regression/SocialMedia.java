@@ -1,53 +1,42 @@
 package regression;
 
-import base.TestBase;
-import org.junit.Assert;
+import base.BaseTests;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import java.util.ArrayList;
+import pages.SocialMediaPages;
 
-public class SocialMedia extends TestBase {
+
+
+public class SocialMedia extends BaseTests {
+
+
     @Test
-    public void checkFacebook(){
-        driver.findElement(By.xpath("//img[@alt='Facebook']")).click();
+    public void checkFacebook() throws Exception{
+        SocialMediaPages socialMediaPages = homePage.clickOnFacebookLink();
         delay(5);
-        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
-        driver.switchTo().window(tabs2.get(1));
-        String fb =driver.getTitle();
-        System.out.println(fb );
-        Assert.assertTrue(fb.contains("InsightPortal - Home | Facebook"));
+        socialMediaPages.checkFacebookPage();
+    }
+
+//    @Test
+    public void checkYouTube() {
+        SocialMediaPages socialMediaPages = homePage.clickOnYoutubeLink();
+        delay(5);
+        socialMediaPages.checkYoutubePage();
     }
 
     @Test
-    public void checkYouTube(){
-        driver.findElement(By.xpath("//img[@alt='Youtube']")).click();
+    public void checkTwitter() throws Exception{
+        SocialMediaPages socialMediaPages = homePage.clickOnTwitterLink();
         delay(5);
-        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
-        driver.switchTo().window(tabs2.get(1));
-        String fb =driver.getTitle();
-        System.out.println(fb );
-        Assert.assertTrue(fb.contains("InsightPortal - YouTube"));
+        socialMediaPages.checkTwitterPage();
+
     }
 
-    @Test
-    public void checkTwitter(){
-        driver.findElement(By.xpath("//img[@alt='Twitter']")).click();
+//    @Test
+    public void checkLinkedIn() throws  Exception{
+        SocialMediaPages socialMediaPages = homePage.clickOnLinkedInLink();
         delay(5);
-        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
-        driver.switchTo().window(tabs2.get(1));
-        String fb =driver.getTitle();
-        System.out.println(fb );
-        Assert.assertTrue(fb.contains("(@InsightPortal) | Twitter"));
+        socialMediaPages.checkLinkedInPage();
     }
 
-    @Test
-    public void checkLinkedIn(){
-        driver.findElement(By.xpath("//img[@alt='LinkedIn']")).click();
-        delay(5);
-        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
-        driver.switchTo().window(tabs2.get(1));
-        String fb =driver.getTitle();
-        System.out.println(fb );
-        Assert.assertTrue(fb.contains("InsightPortal | LinkedIn"));
-    }
+
 }

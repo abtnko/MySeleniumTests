@@ -1,17 +1,18 @@
 package regression;
 
-import base.TestBase;
+
+import base.BaseTests;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import pages.LoginPage;
 
-public class PaidServices extends TestBase {
+public class PaidServices extends BaseTests {
     @Test
     public void paidServiceNotVisibleForNotLoggedUser() {
-        driver.findElement(By.className("tools")).click();
-        delay(3);
-        driver.findElement(By.xpath("//div[contains(text(), 'TestAdvisor')]")).click();
-        delay(3);
-        Assert.assertTrue(driver.findElement(By.xpath("//label[contains(text(), 'logIn')]")).isDisplayed());
+        homePage.clickOnTools();
+        LoginPage loginPage = homePage.tryToAccessPaidService();
+        delay(2);
+        loginPage.checkLoginWindowIsPresent();
     }
 }

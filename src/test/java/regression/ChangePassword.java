@@ -1,103 +1,157 @@
 package regression;
 
-import base.TestBase;
-import model.User;
+import base.BaseTests;
+import base.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import pages.DashboardPage;
+import pages.LoginPage;
+import pages.MyAccountPage;
+
+import java.io.IOException;
 
 import static org.junit.Assert.*;
 
-public class ChangePassword extends TestBase {
+public class ChangePassword extends BaseTests {
+
+    @Test
+    public void changeInCorrectFormat() throws IOException {
+        User user = User.Tom;
+        String currentPassword = "3xTOMtomTOM";
+        String newPassword = "3xtomTOMtom";
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        loginPage.setCorrectPassword(user);
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
+        delay(3);
+        MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
+        myAccountPage.enterCurrentPassword(currentPassword);
+        myAccountPage.enterNewPassword(newPassword);
+        myAccountPage.confirmNewPassword(newPassword);
+        myAccountPage.clickOnSaveButton();
+        delay(2);
+        myAccountPage.checkPresenceOfPopUp();
+        validationTest.captureScreenShots();
+        myAccountPage.closePopUp();
+        delay(2);
+        dashboardPage.logOut();
+//        Checking if new password has been recorded in database
+        homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        loginPage.setChangedPassword(newPassword);
+        delay(2);
+        loginPage.clickLoginButton();
+        delay(2);
+//        Changing password back to permanent one
+        dashboardPage.goToMyAccount();
+        myAccountPage.enterCurrentPassword(newPassword);
+        myAccountPage.enterNewPassword(currentPassword);
+        myAccountPage.confirmNewPassword(currentPassword);
+        myAccountPage.clickOnSaveButton();
+        delay(2);
+        dashboardPage.logOut();
+    }
+
+    @Test
+    public void changeOnlyLetters() throws IOException {
+        User user = User.Tom;
+        String currentPassword = "3xTOMtomTOM";
+        String newPassword = "bbbbbbbB";
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        loginPage.setCorrectPassword(user);
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
+        delay(3);
+        MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
+        myAccountPage.enterCurrentPassword(currentPassword);
+        myAccountPage.enterNewPassword(newPassword);
+        myAccountPage.confirmNewPassword(newPassword);
+        delay(2);
+        myAccountPage.checkAlertTextForLetters();
+        validationTest.captureScreenShots();
+        delay(2);
+        dashboardPage.logOut();
+    }
+
+    @Test
+    public void changeOnlyDigits() throws IOException {
+        User user = User.Tom;
+        String currentPassword = "3xTOMtomTOM";
+        String newPassword = "11111111";
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        loginPage.setCorrectPassword(user);
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
+        delay(3);
+        MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
+        myAccountPage.enterCurrentPassword(currentPassword);
+        myAccountPage.enterNewPassword(newPassword);
+        myAccountPage.confirmNewPassword(newPassword);
+        myAccountPage.checkAlertTextForDigits();
+        delay(3);
+        validationTest.captureScreenShots();
+        delay(2);
+        dashboardPage.logOut();
+    }
+
+    @Test
+    public void changeLessThan8Characters() throws IOException {
+        User user = User.Tom;
+        String currentPassword = "3xTOMtomTOM";
+        String newPassword = "bbb111";
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user);
+        loginPage.setCorrectPassword(user);
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
+        delay(3);
+        MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
+        myAccountPage.enterCurrentPassword(currentPassword);
+        myAccountPage.enterNewPassword(newPassword);
+        myAccountPage.confirmNewPassword(newPassword);
+        myAccountPage.checkAlertTextForCharacters();
+        validationTest.captureScreenShots();
+        delay(2);
+        dashboardPage.logOut();
+    }
+
+    @Test
+    public void changeWhenTwoDifferent() throws IOException {
+        User user1 = User.Tom;
+        String currentPassword = "3xTOMtomTOM";
+        String newPassword = "bbb111BBB";
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user1);
+        loginPage.setCorrectPassword(user1);
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
+        delay(3);
+        MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
+        myAccountPage.enterCurrentPassword(currentPassword);
+        myAccountPage.enterNewPassword(newPassword);
+        myAccountPage.confirmNewPassword(currentPassword);
+        myAccountPage.checkAlertTextForMismatch();
+        validationTest.captureScreenShots();
+        delay(2);
+        dashboardPage.logOut();
+    }
 
 //    @Test
-    public void changeInCorrectFormat(){
-        User user = User.Tom;
-        logIn(user);
-        String newPassword = "TOMtomTOMx3";
-        driver.findElement(By.xpath("//*[@id=\"account-container\"]/button[1]")).click();
-        delay(5);
-        driver.findElements(By.name("password")).get(0).sendKeys(user.getPassword());
-        driver.findElements(By.name("password")).get(1).sendKeys(newPassword);
-        driver.findElements(By.name("password")).get(2).sendKeys(newPassword);
-        driver.findElement(By.id("save-button")).click();
-        delay(5);
-        driver.findElement(By.xpath("//span[contains(text(), 'Log out')]")).click();
+    public void changeWhenMoreThanFifty() throws Exception {
+        User user1 = User.Tom;
+        String currentPassword = "3xTOMtomTOM";
+        String newPassword = "bbb111BBBbbb111BBBbbb111BBBbbb111BBBbbb111BBBbbb111BBB";
+        LoginPage loginPage = homePage.clickOnLoginIcon();
+        loginPage.setCorrectLogin(user1);
+        loginPage.setCorrectPassword(user1);
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(3);
-//        Checking if password is updated
-        driver.findElement(By.id("input-logIn")).sendKeys("tom.h@yopmail.com");
-        driver.findElement(By.id("input-password")).sendKeys(newPassword);
-        driver.findElement(By.xpath("//button[contains(text(), 'LOG IN')]")).click();
-        delay(5);
-        Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"container\"]/form/div[4]/p")).getText().equals("Tom Haverford"));
+        MyAccountPage myAccountPage = dashboardPage.goToMyAccount();
+        myAccountPage.enterCurrentPassword(currentPassword);
+        myAccountPage.enterNewPassword(newPassword);
+        myAccountPage.confirmNewPassword(currentPassword);
+        myAccountPage.checkAlertTextForMismatch();
+        validationTest.captureScreenShots();
+        delay(2);
+        dashboardPage.logOut();
     }
-
-    @Test
-    public void changeOnlyLetters(){
-        User user = User.Tom;
-        logIn(user);
-        String newPassword = "TOMtomTOM";
-        driver.findElement(By.xpath("//*[@id=\"account-container\"]/button[1]")).click();
-        delay(5);
-        driver.findElements(By.name("password")).get(0).sendKeys(user.getPassword());
-        driver.findElements(By.name("password")).get(1).sendKeys(newPassword);
-        driver.findElements(By.name("password")).get(2).sendKeys(newPassword);
-        delay(5);
-        Assert.assertTrue(driver.findElement(By.className("p-incorrect-password")).getText().equals("\n" +
-                "        One number required.\n" +
-                "      "));
-    }
-
-    @Test
-    public void changeOnlyDigits(){
-        User user = User.Tom;
-        logIn(user);
-        String newPassword = "11112222";
-        driver.findElement(By.xpath("//*[@id=\"account-container\"]/button[1]")).click();
-        delay(5);
-        driver.findElements(By.name("password")).get(0).sendKeys(user.getPassword());
-        driver.findElements(By.name("password")).get(1).sendKeys(newPassword);
-        driver.findElements(By.name("password")).get(2).sendKeys(newPassword);
-        delay(5);
-        Assert.assertTrue(driver.findElement(By.className("p-incorrect-password")).getText().equals("\n" +
-                "        One lowercase letter required.\n" +
-                "      "));
-    }
-
-    @Test
-    public void changeLessThan8Characters(){
-        User user = User.Tom;
-        logIn(user);
-        String newPassword = "1111";
-        driver.findElement(By.xpath("//*[@id=\"account-container\"]/button[1]")).click();
-        delay(5);
-        driver.findElements(By.name("password")).get(0).sendKeys(user.getPassword());
-        driver.findElements(By.name("password")).get(1).sendKeys(newPassword);
-        driver.findElements(By.name("password")).get(2).sendKeys(newPassword);
-        delay(5);
-        Assert.assertTrue(driver.findElement(By.className("p-incorrect-password")).getText().equals("\n" +
-                "        New password needs at least 8 characters.\n" +
-                "      "));
-
-    }
-
-    @Test
-    public void changeWhenTwoDifferent(){
-        User user = User.Tom;
-        logIn(user);
-        String firstNew = "1111";
-        String secondNew = "2222";
-        driver.findElement(By.xpath("//*[@id=\"account-container\"]/button[1]")).click();
-        delay(5);
-        driver.findElements(By.name("password")).get(0).sendKeys(user.getPassword());
-        driver.findElements(By.name("password")).get(1).sendKeys(firstNew);
-        driver.findElements(By.name("password")).get(2).sendKeys(secondNew);
-        delay(5);
-        assertEquals("\n" +
-                "        New password does not match the confirm password.\n" +
-                "      ", driver.findElement(By.className("p-incorrect-password")).getText());
-//        assertTrue(driver.findElement(By.id("save-button")).isEnabled());
-    }
-
 }

@@ -4,10 +4,7 @@ import base.BaseTests;
 import org.junit.Test;
 import pages.SocialMediaPages;
 
-
-
 public class SocialMedia extends BaseTests {
-
 
     @Test
     public void checkFacebook() throws Exception{
@@ -17,7 +14,7 @@ public class SocialMedia extends BaseTests {
     }
 
     @Test
-    public void checkYouTube() {
+    public void checkYouTube() throws InterruptedException {
         SocialMediaPages socialMediaPages = homePage.clickOnYoutubeLink();
         delay(5);
         socialMediaPages.checkYoutubePage();
@@ -37,6 +34,5 @@ public class SocialMedia extends BaseTests {
         delay(5);
         socialMediaPages.checkLinkedInPage();
     }
-
 
 }

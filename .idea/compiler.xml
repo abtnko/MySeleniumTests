@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="safari-desktop" />
+        <module name="InsightPortalTests" />
         <module name="InsightPortal-DesktopSafari" />
+        <module name="safari-desktop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

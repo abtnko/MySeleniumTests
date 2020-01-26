@@ -2,9 +2,14 @@ package base;
 
 import org.junit.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import pages.HomePage;
+
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTests {
@@ -16,10 +21,13 @@ public class BaseTests {
 
     @Before
     public void startTest() {
-        driver = new SafariDriver();
-        driver.get("https://beta.insightportal.io/");
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("maxInstances", "1");
+
+        driver = new SafariDriver(SafariOptions.fromCapabilities(caps));
+        driver.get("https://www.insightportal.io/");
         driver.manage().window().fullscreen();
-        delay(3);
+        delay(4);
 
         homePage = new HomePage(driver);
         validationTest = new ValidationTest(driver);
@@ -35,7 +43,7 @@ public class BaseTests {
 
     @After
     public void tearDown(){
-        driver.close();
+        driver.quit();
     }
 
 //    @AfterClass

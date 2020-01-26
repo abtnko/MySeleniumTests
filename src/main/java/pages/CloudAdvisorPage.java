@@ -6,6 +6,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.awt.datatransfer.StringSelection;
+import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -45,13 +47,68 @@ public class CloudAdvisorPage {
     private By calendar = By.xpath("//input[@placeholder='Select start date']");
     private By editSlotButton = By.xpath("//i[@class ='glyphicon glyphicon-pencil']");
     private By okButton = By.xpath("//i[@class ='glyphicon glyphicon-ok']");
-    private By newDeviceMode = By.xpath("//*[@title='Iconia Tab 10']");
-    private By oldDeviceModel = By.xpath("//*[@title='Iconia One 8']");
+    private By newDeviceMode = By.xpath("//*[@title='Galaxy S10']");
+    private By oldDeviceModel = By.xpath("//*[@title='Galaxy S9']");
     private By insightPortalLogo = By.xpath("//img[@class='logo']");
+    private By allTabs = By.className("span-parent");
+    private By chooseFile = By.id("slot-upload-file");
+    private By uploadButton = By.xpath("//input[@value='Upload']");
+    private By popUpOnUpload = By.xpath("//div[contains(text(), 'Few of devices except 1 were loaded successfully.')]");
+    private By warningMessage = By.className("warnings-title");
+    private By deleteAllButton = By.xpath("//button[contains(text(), ' Delete All')]");
+    private By popUpOnDeleteAll = By.xpath("//h2[contains(text(), 'Are you sure?')]");
+    private By yesButton = By.xpath("//button[contains(text(), 'Yes')]");
 
 
     public CloudAdvisorPage(WebDriver driver){
         this.driver = driver;
+    }
+
+    public void clickOnDeleteAllButton(){
+        driver.findElement(deleteAllButton).click();
+    }
+    public void verifyWarningMessageIsPresent(){
+        Assert.assertTrue(driver.findElement(warningMessage).getText().contains("Devices that couldn't be recognized:"));
+    }
+
+    public void verifyPopUpOnDeleteAllDevices(){
+        Assert.assertTrue(driver.findElement(popUpOnDeleteAll).isDisplayed());
+    }
+
+    public void agreeOnPopUp(){
+        driver.findElement(yesButton).click();
+    }
+
+    public void checkIfDevicesAbsentInTable(String deviceName){
+        List<WebElement> allArticles = driver.findElements(tasksTable);
+        for (WebElement article : allArticles) {
+            String taskName = article.getText();
+            Assert.assertFalse(taskName.contains(deviceName));
+        }
+    }
+
+    public void checkIfDevicesPresentInTable(String deviceName){
+        List<WebElement> allArticles = driver.findElements(tasksTable);
+        for (WebElement article : allArticles) {
+            String taskName = article.getText();
+            Assert.assertTrue(taskName.contains(deviceName));
+        }
+    }
+    public void clickOnChooseFile(){
+        driver.findElement(chooseFile).sendKeys("/Users/macbook/IdeaProjects/upload_file_with_wrong_device.csv");
+    }
+
+    public void clickOnUpload() {
+        driver.findElement(uploadButton).click();
+    }
+
+    public void verifyPopUpAfterUpload(){
+        Assert.assertTrue(driver.findElement(popUpOnUpload).isDisplayed());
+    }
+
+    public void checkIfAllTabsAreVisible(String tabsNames){
+        System.out.println(driver.findElement(allTabs).getText());
+        Assert.assertTrue(driver.findElement(allTabs).getText().contains(tabsNames));
     }
 
     public void clickOnEditSlotButton(){
@@ -179,6 +236,7 @@ public class CloudAdvisorPage {
         List<WebElement> allArticles = driver.findElements(tasksTable);
         for (WebElement article : allArticles) {
             String taskName = article.getText();
+            System.out.println(taskName);
             Assert.assertTrue(taskName.contains(task));
         }
     }

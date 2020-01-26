@@ -12,8 +12,7 @@ public class SocialMediaPages {
     private WebDriver driver;
      final String FACEBOOK = "InsightPortal - Home | Facebook";
      final String TWITTER = "InsightPortal (@InsightPortal) | Twitter";
-     final String YOUTUBE = "InsightPortal - YouTube" +
-             "InsightPortal | Dashboard";
+     final String YOUTUBE = "InsightPortal - YouTube";
      final String LINKEDIN = "InsightPortal | LinkedIn";
 //     final String INSIGHTPORTAL = "InsightPortal | Dashboard";
 
@@ -42,8 +41,9 @@ public class SocialMediaPages {
 
         ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(1));
+        Thread.sleep(3000);
         System.out.println(driver.getTitle());
-        Assert.assertEquals(driver.getTitle(), FACEBOOK);
+        Assert.assertTrue(driver.getTitle().contains(FACEBOOK));
         driver.close();
         driver.switchTo().window(tabs2.get(0));
         System.out.println(driver.getTitle());
@@ -61,47 +61,34 @@ public class SocialMediaPages {
     public void checkTwitterPage() throws Exception{
         ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(1));
+        Thread.sleep(3000);
         System.out.println(driver.getTitle());
-        Assert.assertEquals(driver.getTitle(), TWITTER);
+        Assert.assertTrue(driver.getTitle().contains(TWITTER));
         driver.close();
         driver.switchTo().window(tabs2.get(0));
         System.out.println(driver.getTitle());
-//
-//
-//        ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
-//        System.out.println(tabs2);
-////        driver.switchTo().window(tabs2.get(0));
-//        Thread.sleep(2000);
-//        System.out.println(driver.getTitle());
-//        Assert.assertTrue(driver.getTitle().contains(TWITTER));
-//        driver.close();
-//        Thread.sleep(1000);
-//        driver.switchTo().window(tabs2.get(0));
-//        Thread.sleep(2000);
-//        driver.manage().window().fullscreen();
     }
 
-    public void checkYoutubePage(){
+    public void checkYoutubePage() throws InterruptedException {
         ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(1));
+        Thread.sleep(3000);
+        System.out.println(driver.getTitle());
         Assert.assertTrue(driver.getTitle().contains(YOUTUBE));
         driver.close();
         driver.switchTo().window(tabs2.get(0));
-        driver.manage().window().fullscreen();
+        System.out.println(driver.getTitle());
     }
 
-    public void checkLinkedInPage() throws Exception{
+    public void checkLinkedInPage() throws InterruptedException {
         ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
-        System.out.println(tabs2);
-//        driver.switchTo().window(tabs2.get(0));
-        Thread.sleep(2000);
+        driver.switchTo().window(tabs2.get(1));
+        Thread.sleep(3000);
         System.out.println(driver.getTitle());
         Assert.assertTrue(driver.getTitle().contains(LINKEDIN));
         driver.close();
-        Thread.sleep(1000);
         driver.switchTo().window(tabs2.get(0));
-        Thread.sleep(2000);
-//        driver.manage().window().fullscreen();
+        System.out.println(driver.getTitle());
     }
 
 }

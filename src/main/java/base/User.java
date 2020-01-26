@@ -2,6 +2,7 @@ package base;
 
 public enum User {
     Tom ("Tom", "Haverford", "tom.h76@yopmail.com", "732168882", "3TOMtomTOM", "QA TEST"),
+    Ben ("Ben", " ", "ben.dl8@yopmail.com", " ", "3BENbenBEN", " "),
     FakeWithLetters ("F", "F", "f@", "000000", " ", "Fake Co."),
     FakeWithDigits ("11", "22", " ", " ", "", "");
 

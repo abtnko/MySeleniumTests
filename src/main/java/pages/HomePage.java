@@ -20,7 +20,10 @@ public class HomePage extends BaseTests {
     private By loginIcon = By.xpath("//span[contains(text(), 'Login')]");
     private By tools = By.xpath("//div[contains(text(), 'Tools')]");
     private By news = By.xpath("//div[@class='news']");
-    private By testAdvisor = By.xpath("//div[contains(text(), ' TestAdvisor')]");
+    private By testAdvisor = By.xpath("//div[contains(text(), 'TestAdvisor')]");
+    private By releaseAdvisor = By.xpath("//div[contains(text(), 'ReleaseAdvisor')]");
+    private By statistics = By.xpath("//div[contains(text(), 'Statistics')]");
+    private By cloudAdvisor = By.xpath("//div[contains(text(), 'CloudAdvisor')]");
     private By allNews = By.xpath("//div[contains(text(), 'All News')]");
     private By mobileNews = By.xpath("//div[contains(text(), 'Mobile News')]");
     private By facebook = By.xpath("//img[@alt='Facebook']");
@@ -30,15 +33,19 @@ public class HomePage extends BaseTests {
     private By searchBar = By.id("searchbar");
     private By search = By.xpath("//input[@type='submit']");
     private By searchResults = By.id("child-of-container");
-    private By cloudAdvisor = By.xpath("//div[contains(text(), 'CloudAdvisor')]");
     private By closeButton = By.xpath("//span[@class='close']");
     private By cookiesBanner = By.xpath("//div[@class='banner-child']");
-
+    private By mainMenu = By.xpath("//img[@alt='Menu']");
 
 
     public HomePage(WebDriver driver){
         this.driver = driver;
     }
+
+    public void openMenu(){
+        driver.findElement(mainMenu).click();
+    }
+
 
     public void checkCookiesBannerIsPresent(){
         Assert.assertTrue(driver.findElement(cookiesBanner).isDisplayed());
@@ -72,9 +79,23 @@ public class HomePage extends BaseTests {
         driver.findElement(tools).click();
     }
 
-    public LoginPage tryToAccessPaidService(){
-//        driver.findElements(menuItem).get(1).click();
+    public LoginPage tryToAccessTestAdvisor(){
         driver.findElement(testAdvisor).click();
+        return new LoginPage(driver);
+    }
+
+    public LoginPage tryToAccessReleaseAdvisor(){
+        driver.findElement(releaseAdvisor).click();
+        return new LoginPage(driver);
+    }
+
+    public LoginPage tryToAccessStatistics(){
+        driver.findElement(statistics).click();
+        return new LoginPage(driver);
+    }
+
+    public LoginPage tryToAccessCloudAdvisor(){
+        driver.findElement(cloudAdvisor).click();
         return new LoginPage(driver);
     }
 

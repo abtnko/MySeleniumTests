@@ -14,7 +14,7 @@ public class PaidServices extends BaseTests {
         try {
             homePage.clickOnTools();
         } catch (Exception e){
-            homePage.openMenu();
+            //        homePage.openMenu();
             delay(2);
             homePage.clickOnTools();
         }
@@ -22,17 +22,17 @@ public class PaidServices extends BaseTests {
         delay(2);
         loginPage.checkLoginWindowIsPresent();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.tryToAccessReleaseAdvisor();
         delay(2);
         loginPage.checkLoginWindowIsPresent();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.tryToAccessStatistics();
         delay(2);
         loginPage.checkLoginWindowIsPresent();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.tryToAccessCloudAdvisor();
         delay(2);
         loginPage.checkLoginWindowIsPresent();

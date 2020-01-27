@@ -2,26 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be8695b7-5190-4b7d-920e-f04c33151b02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeInCorrectFormat.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeInCorrectFormat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeLessThan8Characters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeLessThan8Characters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeOnlyDigits.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeOnlyDigits.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeOnlyLetters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeOnlyLetters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeToSameAsOldOne.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeToSameAsOldOne.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeWhenMoreThanFifty.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeWhenMoreThanFifty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/changeWhenTwoDifferent.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeWhenTwoDifferent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/logInWithCorrectCredentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/logInWithCorrectCredentials.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/logInWithWrongPassword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/logInWithWrongPassword.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/logInWithWrongUsername.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/logInWithWrongUsername.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/requestWithCorrectInputData.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithCorrectInputData.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongEmail.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongEmail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongName.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongName.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongPhone.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongPhone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongSurname.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongSurname.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/setInvalidEmail.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setInvalidEmail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/setNotMatchingPasswords.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setNotMatchingPasswords.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/setPasswordLessEightCharacters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordLessEightCharacters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/setPasswordLowercaseLetters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordLowercaseLetters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/setPasswordMoreFiftyCharacters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordMoreFiftyCharacters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/setPasswordOnlyDigits.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordOnlyDigits.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/setPasswordOnlyLetters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordOnlyLetters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validations/setPasswordUppercaseLetters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordUppercaseLetters.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/CloudAdvisorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CloudAdvisorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SocialMediaPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SocialMediaPages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/SocialMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/SocialMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/InsightPortal-DesktopSafari.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/base/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BaseTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/CloudAdvisorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/CloudAdvisorPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/SocialMediaPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/SocialMediaPages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/InsightPortal-DesktopSafari.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/regression/CloudAdvisor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/CloudAdvisor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/SocialMedia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/SocialMedia.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +79,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.CloudAdvisor.I_deleteAllDevices">
+  <component name="RunManager" selected="JUnit.CloudAdvisor">
     <configuration name="CloudAdvisor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InsightPortalTests" />
       <extension name="coverage">
@@ -148,10 +160,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CloudAdvisor" />
         <item itemvalue="JUnit.CloudAdvisor.I_deleteAllDevices" />
         <item itemvalue="JUnit.CloudAdvisor.H_uploadFileWithDevices" />
         <item itemvalue="JUnit.CloudAdvisor.checkVisibilityOfAllTabs" />
-        <item itemvalue="JUnit.CloudAdvisor" />
         <item itemvalue="JUnit.CookiesBanner" />
       </list>
     </recent_temporary>
@@ -198,6 +210,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="547" y="233" key="#CloudAdvisor" timestamp="1580138501351">
+      <screen x="0" y="23" width="1920" height="1096" />
+    </state>
+    <state x="547" y="233" key="#CloudAdvisor/0.23.1920.1096@0.23.1920.1096" timestamp="1580138501351" />
     <state x="560" y="237" key="#Project_Structure" timestamp="1575452172290">
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
@@ -215,33 +231,33 @@
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
     <state x="391" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1575473030619" />
-    <state width="1238" height="263" key="GridCell.Tab.0.bottom" timestamp="1580033331468">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="351" key="GridCell.Tab.0.bottom" timestamp="1580139369060">
+      <screen x="0" y="23" width="1920" height="1096" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580033331468" />
     <state width="1238" height="251" key="GridCell.Tab.0.bottom/0.23.1280.699@0.23.1280.699" timestamp="1579969910097" />
-    <state width="1878" height="351" key="GridCell.Tab.0.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1579881275468" />
+    <state width="1878" height="351" key="GridCell.Tab.0.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1580139369060" />
     <state width="1878" height="372" key="GridCell.Tab.0.bottom/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911726" />
-    <state width="1238" height="263" key="GridCell.Tab.0.center" timestamp="1580033331467">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="351" key="GridCell.Tab.0.center" timestamp="1580139369058">
+      <screen x="0" y="23" width="1920" height="1096" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1580033331467" />
     <state width="1238" height="251" key="GridCell.Tab.0.center/0.23.1280.699@0.23.1280.699" timestamp="1579969910093" />
-    <state width="1878" height="351" key="GridCell.Tab.0.center/0.23.1920.1096@0.23.1920.1096" timestamp="1579881275467" />
+    <state width="1878" height="351" key="GridCell.Tab.0.center/0.23.1920.1096@0.23.1920.1096" timestamp="1580139369058" />
     <state width="1878" height="372" key="GridCell.Tab.0.center/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911721" />
-    <state width="1238" height="263" key="GridCell.Tab.0.left" timestamp="1580033331466">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="351" key="GridCell.Tab.0.left" timestamp="1580139369058">
+      <screen x="0" y="23" width="1920" height="1096" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1580033331466" />
     <state width="1238" height="251" key="GridCell.Tab.0.left/0.23.1280.699@0.23.1280.699" timestamp="1579969910092" />
-    <state width="1878" height="351" key="GridCell.Tab.0.left/0.23.1920.1096@0.23.1920.1096" timestamp="1579881275467" />
+    <state width="1878" height="351" key="GridCell.Tab.0.left/0.23.1920.1096@0.23.1920.1096" timestamp="1580139369058" />
     <state width="1878" height="372" key="GridCell.Tab.0.left/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911720" />
-    <state width="1238" height="263" key="GridCell.Tab.0.right" timestamp="1580033331468">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="351" key="GridCell.Tab.0.right" timestamp="1580139369059">
+      <screen x="0" y="23" width="1920" height="1096" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1580033331468" />
     <state width="1238" height="251" key="GridCell.Tab.0.right/0.23.1280.699@0.23.1280.699" timestamp="1579969910096" />
-    <state width="1878" height="351" key="GridCell.Tab.0.right/0.23.1920.1096@0.23.1920.1096" timestamp="1579881275467" />
+    <state width="1878" height="351" key="GridCell.Tab.0.right/0.23.1920.1096@0.23.1920.1096" timestamp="1580139369059" />
     <state width="1878" height="372" key="GridCell.Tab.0.right/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911723" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1580033331471">
       <screen x="0" y="0" width="1280" height="800" />
@@ -275,10 +291,10 @@
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
     <state x="447" y="153" key="SettingsEditor/0.23.1920.1098@0.23.1920.1098" timestamp="1575971501536" />
-    <state x="640" y="328" width="782" height="550" key="find.popup" timestamp="1579852806592">
+    <state x="640" y="328" width="782" height="550" key="find.popup" timestamp="1580138480144">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
-    <state x="640" y="328" width="782" height="550" key="find.popup/0.23.1920.1096@0.23.1920.1096" timestamp="1579852806592" />
+    <state x="640" y="328" width="782" height="550" key="find.popup/0.23.1920.1096@0.23.1920.1096" timestamp="1580138480144" />
     <state x="139" y="256" width="1141" height="544" key="new project wizard" timestamp="1580028941404">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

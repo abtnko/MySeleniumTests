@@ -22,7 +22,7 @@ public class CloudAdvisorPage {
     private By deviceBrand = By.xpath("//*[@title='Alcatel']");
     private By deviceModel = By.xpath("//*[@title='U5']");
     private By os = By.xpath("//*[@title='Android 9.1']");
-    private By browserName = By.xpath("//*[@title='Opera 63']");
+    private By browserName = By.xpath("//*[@title='Opera 49']");
     private By addSlot = By.xpath("//input[@value='Accept']");
     private By popUp = By.xpath("//button[contains(text(), 'OK')]");
     private By nextPage = By.xpath("//input[@value='>']");
@@ -95,7 +95,7 @@ public class CloudAdvisorPage {
         }
     }
     public void clickOnChooseFile(){
-        driver.findElement(chooseFile).sendKeys("/Users/macbook/IdeaProjects/upload_file_with_wrong_device.csv");
+        driver.findElement(chooseFile).sendKeys("/Users/annabutenko/IdeaProjects/upload_file_with_wrong_device.csv");
     }
 
     public void clickOnUpload() {

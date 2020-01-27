@@ -25,15 +25,15 @@ public class CloudAdvisor extends BaseTests {
 
     final String DEVICE_ON_MANAGE = "Alcatel";
     final String DEVICE_ON_OVERVIEW = "Alcatel U5";
-    final String FULL_DEVICE_NAME = "6 Alcatel U5 Android 9.1  63";
-    final String TASK = "6. Alcatel U5 6 Replace with Samsung Galaxy S3 on Android 9.0 2020-02-25";
+    final String FULL_DEVICE_NAME = "Alcatel";
+    final String TASK = " Alcatel U5 7 Replace with ";
     final String DEVICE_NAME = "Apple iPhone XS Max";
     final String NEW_DEVICE_MODEL = "Galaxy S10";
-    final String TABS_NAMES = "Overview\n" +
+    final String TABS_NAMES = "          Overview\n" +
             "          Manage\n" +
             "          Task Generator\n" +
             "          Archive";
-    final String CHECK_DEVICE = "1 Samsung Galaxy S10 Android 8.1";
+    final String CHECK_DEVICE = "Samsung Galaxy S10 Android 8.1";
 
 
     @Test
@@ -47,7 +47,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         delay(2);
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
@@ -78,7 +78,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         delay(2);
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
@@ -101,7 +101,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         delay(2);
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
@@ -130,7 +130,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         delay(2);
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
@@ -153,7 +153,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         delay(2);
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
@@ -180,7 +180,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         delay(2);
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
@@ -209,7 +209,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
@@ -237,7 +237,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
@@ -264,7 +264,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
@@ -292,7 +292,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
@@ -321,7 +321,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
@@ -344,7 +344,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
@@ -383,7 +383,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         delay(2);
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
@@ -404,7 +404,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         delay(2);
         homePage.clickOnTools();
         delay(2);
@@ -440,7 +440,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.clickLoginButton();
         delay(2);
-        homePage.openMenu();
+        //        homePage.openMenu();
         homePage.clickOnTools();
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);

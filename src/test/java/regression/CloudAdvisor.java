@@ -26,7 +26,7 @@ public class CloudAdvisor extends BaseTests {
     final String DEVICE_ON_MANAGE = "Alcatel";
     final String DEVICE_ON_OVERVIEW = "Alcatel U5";
     final String FULL_DEVICE_NAME = "Alcatel";
-    final String TASK = " Alcatel U5 7 Replace with ";
+    final String TASK = "Alcatel U5 7 Replace with";
     final String DEVICE_NAME = "Apple iPhone XS Max";
     final String NEW_DEVICE_MODEL = "Galaxy S10";
     final String TABS_NAMES = "          Overview\n" +
@@ -53,7 +53,9 @@ public class CloudAdvisor extends BaseTests {
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(3);
         cloudAdvisorPage.goToManageTab();
+        delay(3);
         cloudAdvisorPage.clickOnSlotButton();
+        delay(3);
         cloudAdvisorPage.addSlot();
         delay(3);
         cloudAdvisorPage.dismissPopUp();
@@ -77,12 +79,12 @@ public class CloudAdvisor extends BaseTests {
         loginPage.setCorrectPassword(user);
         delay(1);
         loginPage.clickLoginButton();
-        delay(2);
+        delay(3);
         //        homePage.openMenu();
         homePage.clickOnTools();
         delay(2);
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
-        delay(2);
+        delay(4);
         cloudAdvisorPage.goToNextPage();
         delay(2);
         cloudAdvisorPage.checkDeviceIsAdded(DEVICE_ON_OVERVIEW);
@@ -160,7 +162,12 @@ public class CloudAdvisor extends BaseTests {
         delay(2);
         cloudAdvisorPage.goToTasksTab();
         delay(2);
-//        cloudAdvisorPage.expandTable();
+        try {
+            cloudAdvisorPage.expandTable();
+        } catch (Exception e) {
+            System.out.println("Show more is not present");
+        }
+        delay(2);
         cloudAdvisorPage.checkTaskIsPresentInTasksTable(TASK);
         cloudAdvisorPage.archiveTask();
         delay(2);
@@ -190,7 +197,12 @@ public class CloudAdvisor extends BaseTests {
         cloudAdvisorPage.restoreTask();
         cloudAdvisorPage.goToTasksTab();
         delay(2);
-//        cloudAdvisorPage.expandTable();
+        try {
+            cloudAdvisorPage.expandTable();
+        } catch (Exception e) {
+            System.out.println("Show more is not present");
+        }
+        delay(2);
         cloudAdvisorPage.checkTaskIsPresentInTasksTable(TASK);
         DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
         dashboardPage.logOut();
@@ -420,9 +432,16 @@ public class CloudAdvisor extends BaseTests {
 //        delay(2);
         cloudAdvisorPage.clickOnUpload();
         delay(3);
-        cloudAdvisorPage.verifyPopUpAfterUpload();
+        try {
+            cloudAdvisorPage.checkIfPopUpOnUploadFleIsPresent();
+            delay(2);
+            cloudAdvisorPage.clickOnUpdateButton();
+        } catch (Exception e){
+            System.out.println("Pop up with Update and Replace is not present");
+        }
         cloudAdvisorPage.dismissPopUp();
         delay(2);
+        cloudAdvisorPage.verifyErrorMessageAfterUpload();
         cloudAdvisorPage.checkIfDevicesPresentInTable(CHECK_DEVICE);
         cloudAdvisorPage.verifyWarningMessageIsPresent();
         DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();

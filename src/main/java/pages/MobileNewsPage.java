@@ -23,6 +23,7 @@ public class MobileNewsPage {
     private By filter = By.id("filter-button");
     private By listOfArticles = By.xpath("//div[@id='child-of-container'][2]");
     private By dateCoverageTitle = By.className("graph-title");
+    private By datesOfArticles = By.className("row articles");
 
 
     public void clickOnFilterButton(){
@@ -48,13 +49,20 @@ public class MobileNewsPage {
         driver.findElement(startDate).sendKeys(startD + "\n");
     }
 
-    public void checkArticlesAreWithCorrectDates(String dates){
-        List<WebElement> allArticles = driver.findElements(listOfArticles);
+    public boolean checkArticlesAreWithCorrectDates(String startDate, String endDate){
+        List<WebElement> allArticles = driver.findElements(datesOfArticles);
         for (WebElement article : allArticles) {
-            String name = article.getText();
-            System.out.println(name);
-            Assert.assertTrue(name.contains(dates));
+            String date = article.getText();
+            System.out.println(date);
+            if (date.contains(startDate)){
+                System.out.println("Article has a date " + startDate + " which is within the range");
+            } else if (date.contains(endDate)){
+                System.out.println("Article has a date " + endDate + " which is within the range");
+            } else {
+                return false;
+            }
         }
+        return true;
     }
 
 }

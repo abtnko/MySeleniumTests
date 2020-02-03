@@ -34,12 +34,11 @@ public class Articles extends BaseTests {
         MobileNewsPage mobileNewsPage = homePage.openMobileNewsPage();
         delay(2);
         mobileNewsPage.setStartDate("01/01/2019");
-        mobileNewsPage.setEndDate("05/01/2019");
+        mobileNewsPage.setEndDate("02/01/2019");
         mobileNewsPage.clickOnDateCoverageTitle();
         mobileNewsPage.clickOnFilterButton();
         delay(3);
-        mobileNewsPage.checkArticlesAreWithCorrectDates("03 Jan 2019");
-        mobileNewsPage.checkArticlesAreWithCorrectDates("02 Jan 2019");
+        mobileNewsPage.checkArticlesAreWithCorrectDates("01 Jan 2019","02 Jan 2019");
     }
 
 }

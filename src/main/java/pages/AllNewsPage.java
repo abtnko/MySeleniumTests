@@ -18,9 +18,8 @@ public class AllNewsPage {
     private By all = By.id("ch-all");
     private By adobe = By.id("adobe");
     private By filter = By.id("filter-button");
-    private By listOfArticles = By.xpath("//div[@id='child-of-container'][2]");
+    private By listOfArticles = By.className("row articles");
     final String ADOBE = "Adobe";
-    private By enableFilter = By.xpath("//input[@id='datepicker-control-input']");
     private By searchBar = By.id("searchbar");
     private By searchButton = By.xpath("//input[@type='submit']");
 
@@ -69,7 +68,8 @@ public class AllNewsPage {
         for (WebElement article : allArticles) {
             String name = article.getText();
             System.out.println(name);
-            Assert.assertTrue(name.contains(keyword));
+//            boolean isContain = name.contains(keyword) || name.contains(keyword.toLowerCase());
+            Assert.assertTrue(name.contains(keyword.toUpperCase()));
         }
     }
 

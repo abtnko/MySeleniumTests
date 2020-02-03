@@ -22,7 +22,6 @@ public class CloudAdvisorPage {
     private By deviceBrand = By.xpath("//*[@title='Alcatel']");
     private By deviceModel = By.xpath("//*[@title='U5']");
     private By os = By.xpath("//*[@title='Android 9.1']");
-    private By browserName = By.xpath("//*[@title='Opera 49']");
     private By addSlot = By.xpath("//input[@value='Accept']");
     private By popUp = By.xpath("//button[contains(text(), 'OK')]");
     private By nextPage = By.xpath("//input[@value='>']");
@@ -30,10 +29,10 @@ public class CloudAdvisorPage {
     private By deleteButton = By.xpath("//table/descendant::i[last()]");
     private By tasksTab = By.xpath("//span[contains(text(), 'Task Generator')]");
     private By tasksTable = By.id("task-table-container");
-    private By archiveButton = By.xpath("//div/following::td[last()]/div[1]/div[5]");
+    private By archiveButton = By.xpath("//*[@id='task'][last()]/td[6]/div[1]/div[5]");
     private By archiveTab = By.xpath("//span[contains(text(), 'Archive')]");
     private By showMore = By.id("show-more");
-    private By restore = By.xpath("//div/following::td[last()]/div[1]/div[1]");
+    private By restoreButton = By.xpath("//div[@title='Restore Task']");
     private By firstRow = By.xpath("//tr[@id='task'][1]");
     private By secondRow = By.xpath("//tr[@id='task'][2]");
     private By deprioritiseTask = By.xpath("//div/ancestor::td/div[1]/div[3]");
@@ -53,12 +52,21 @@ public class CloudAdvisorPage {
     private By allTabs = By.className("span-parent");
     private By chooseFile = By.id("slot-upload-file");
     private By uploadButton = By.xpath("//input[@value='Upload']");
-    private By popUpOnUpload = By.xpath("//div[contains(text(), 'Few of devices except 1 were loaded successfully.')]");
+    private By errorMessageOnUpload = By.className("warnings-title");
     private By warningMessage = By.className("warnings-title");
     private By deleteAllButton = By.xpath("//button[contains(text(), ' Delete All')]");
     private By popUpOnDeleteAll = By.xpath("//h2[contains(text(), 'Are you sure?')]");
     private By yesButton = By.xpath("//button[contains(text(), 'Yes')]");
+    private By popUpOnUploadFile = By.xpath("//h2[contains(text(), 'Select uploading type')]");
+    private By updateButton = By.xpath("//button[contains(text(), 'Update')]");
 
+    public void checkIfPopUpOnUploadFleIsPresent(){
+        driver.findElement(popUpOnUploadFile).isDisplayed();
+    }
+
+    public void clickOnUpdateButton(){
+        driver.findElement(updateButton).click();
+    }
 
     public CloudAdvisorPage(WebDriver driver){
         this.driver = driver;
@@ -102,8 +110,8 @@ public class CloudAdvisorPage {
         driver.findElement(uploadButton).click();
     }
 
-    public void verifyPopUpAfterUpload(){
-        Assert.assertTrue(driver.findElement(popUpOnUpload).isDisplayed());
+    public void verifyErrorMessageAfterUpload(){
+        Assert.assertTrue(driver.findElement(errorMessageOnUpload).isDisplayed());
     }
 
     public void checkIfAllTabsAreVisible(String tabsNames){
@@ -171,7 +179,7 @@ public class CloudAdvisorPage {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
         String currentDay = dateFormat.format(date);
-        Assert.assertTrue(driver.findElements(taskStatus).get(3).getText().equals(currentDay));
+        Assert.assertTrue(driver.findElements(taskStatus).get(3).getText().contains(currentDay));
     }
 
     public void goToArchiveTab(){
@@ -242,7 +250,7 @@ public class CloudAdvisorPage {
     }
 
     public void restoreTask(){
-        driver.findElement(restore).click();
+        driver.findElement(restoreButton).click();
     }
 
     public void archiveTask(){
@@ -275,8 +283,6 @@ public class CloudAdvisorPage {
         driver.findElement(os).click();
         Thread.sleep(2000);
         driver.findElements(dropDownBox).get(4).click();
-        Thread.sleep(2000);
-        driver.findElement(browserName).click();
         Thread.sleep(2000);
         driver.findElement(addSlot).click();
         Thread.sleep(2000);

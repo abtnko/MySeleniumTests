@@ -9,7 +9,7 @@ public class SearchBar extends BaseTests {
 
     @Test
     public void checkArticlesTitlesInSearchList(){
-        String keyword = "chrome";
+        String keyword = "F19";
         homePage.clickOnNewsMenu();
         delay(3);
         AllNewsPage allNewsPage = homePage.openAllNewsPage();

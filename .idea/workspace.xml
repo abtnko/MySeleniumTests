@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be8695b7-5190-4b7d-920e-f04c33151b02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/TestAdvisorPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/regression/TestAdvisor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Validations/changeInCorrectFormat.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeInCorrectFormat.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Validations/changeLessThan8Characters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeLessThan8Characters.png" afterDir="false" />
@@ -10,35 +12,15 @@
       <change beforePath="$PROJECT_DIR$/Validations/changeToSameAsOldOne.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeToSameAsOldOne.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Validations/changeWhenMoreThanFifty.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeWhenMoreThanFifty.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Validations/changeWhenTwoDifferent.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/changeWhenTwoDifferent.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/logInWithCorrectCredentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/logInWithCorrectCredentials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/logInWithWrongPassword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/logInWithWrongPassword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/logInWithWrongUsername.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/logInWithWrongUsername.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/requestWithCorrectInputData.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithCorrectInputData.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongEmail.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongEmail.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongName.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongName.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongPhone.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongPhone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/requestWithWrongSurname.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/requestWithWrongSurname.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/setInvalidEmail.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setInvalidEmail.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/setNotMatchingPasswords.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setNotMatchingPasswords.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/setPasswordLessEightCharacters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordLessEightCharacters.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/setPasswordLowercaseLetters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordLowercaseLetters.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/setPasswordMoreFiftyCharacters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordMoreFiftyCharacters.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/setPasswordOnlyDigits.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordOnlyDigits.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/setPasswordOnlyLetters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordOnlyLetters.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/setPasswordUppercaseLetters.png" beforeDir="false" afterPath="$PROJECT_DIR$/Validations/setPasswordUppercaseLetters.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AllNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AllNewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CloudAdvisorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CloudAdvisorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MobileNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MobileNewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/Articles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/Articles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/SearchBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/SearchBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BaseTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/AllNewsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/AllNewsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/CloudAdvisorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/CloudAdvisorPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/MobileNewsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MobileNewsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/Articles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/Articles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/regression/CloudAdvisor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/CloudAdvisor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/SearchBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/SearchBar.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +66,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.SearchBar.checkArticlesTitlesInSearchList">
+  <component name="RunManager" selected="JUnit.TestAdvisor.validateAll44CountriesAreVisible">
     <configuration name="CloudAdvisor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InsightPortal-DesktopSafari" />
       <extension name="coverage">
@@ -100,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CloudAdvisor,C_archiveTask and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InsightPortal-DesktopSafari" />
       <extension name="coverage">
         <pattern>
@@ -109,19 +91,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="regression.CloudAdvisor,C_archiveTask" />
-        <pattern testClass="regression.CloudAdvisor,D_restoreTask" />
-        <pattern testClass="regression.CloudAdvisor,H_uploadFileWithDevices" />
-        <pattern testClass="regression.SearchBar" />
-        <pattern testClass="regression.SocialMedia" />
-      </patterns>
+      <option name="MAIN_CLASS_NAME" value="regression.Login" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchBar.checkArticlesTitlesInSearchList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RequestOffer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InsightPortal-DesktopSafari" />
       <extension name="coverage">
         <pattern>
@@ -130,9 +106,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.SearchBar" />
-      <option name="METHOD_NAME" value="checkArticlesTitlesInSearchList" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="regression.RequestOffer" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,7 +127,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression in InsightPortal-DesktopSafari" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAdvisor.validateAll44CountriesAreVisible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InsightPortal-DesktopSafari" />
       <extension name="coverage">
         <pattern>
@@ -161,18 +136,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="regression.TestAdvisor" />
+      <option name="METHOD_NAME" value="validateAll44CountriesAreVisible" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SearchBar.checkArticlesTitlesInSearchList" />
-        <item itemvalue="JUnit.CloudAdvisor,C_archiveTask and 4 more" />
-        <item itemvalue="JUnit.regression in InsightPortal-DesktopSafari" />
-        <item itemvalue="JUnit.StartTrial" />
+        <item itemvalue="JUnit.TestAdvisor.validateAll44CountriesAreVisible" />
         <item itemvalue="JUnit.CloudAdvisor" />
+        <item itemvalue="JUnit.StartTrial" />
+        <item itemvalue="JUnit.Login" />
+        <item itemvalue="JUnit.RequestOffer" />
       </list>
     </recent_temporary>
   </component>
@@ -239,33 +216,33 @@
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
     <state x="391" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1575473030619" />
-    <state width="1878" height="351" key="GridCell.Tab.0.bottom" timestamp="1580745427729">
+    <state width="1878" height="351" key="GridCell.Tab.0.bottom" timestamp="1580906313601">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580033331468" />
     <state width="1238" height="251" key="GridCell.Tab.0.bottom/0.23.1280.699@0.23.1280.699" timestamp="1579969910097" />
-    <state width="1878" height="351" key="GridCell.Tab.0.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1580745427729" />
+    <state width="1878" height="351" key="GridCell.Tab.0.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313601" />
     <state width="1878" height="372" key="GridCell.Tab.0.bottom/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911726" />
-    <state width="1878" height="351" key="GridCell.Tab.0.center" timestamp="1580745427728">
+    <state width="1878" height="351" key="GridCell.Tab.0.center" timestamp="1580906313600">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1580033331467" />
     <state width="1238" height="251" key="GridCell.Tab.0.center/0.23.1280.699@0.23.1280.699" timestamp="1579969910093" />
-    <state width="1878" height="351" key="GridCell.Tab.0.center/0.23.1920.1096@0.23.1920.1096" timestamp="1580745427728" />
+    <state width="1878" height="351" key="GridCell.Tab.0.center/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313600" />
     <state width="1878" height="372" key="GridCell.Tab.0.center/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911721" />
-    <state width="1878" height="351" key="GridCell.Tab.0.left" timestamp="1580745427728">
+    <state width="1878" height="351" key="GridCell.Tab.0.left" timestamp="1580906313600">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1580033331466" />
     <state width="1238" height="251" key="GridCell.Tab.0.left/0.23.1280.699@0.23.1280.699" timestamp="1579969910092" />
-    <state width="1878" height="351" key="GridCell.Tab.0.left/0.23.1920.1096@0.23.1920.1096" timestamp="1580745427728" />
+    <state width="1878" height="351" key="GridCell.Tab.0.left/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313600" />
     <state width="1878" height="372" key="GridCell.Tab.0.left/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911720" />
-    <state width="1878" height="351" key="GridCell.Tab.0.right" timestamp="1580745427728">
+    <state width="1878" height="351" key="GridCell.Tab.0.right" timestamp="1580906313601">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1580033331468" />
     <state width="1238" height="251" key="GridCell.Tab.0.right/0.23.1280.699@0.23.1280.699" timestamp="1579969910096" />
-    <state width="1878" height="351" key="GridCell.Tab.0.right/0.23.1920.1096@0.23.1920.1096" timestamp="1580745427728" />
+    <state width="1878" height="351" key="GridCell.Tab.0.right/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313601" />
     <state width="1878" height="372" key="GridCell.Tab.0.right/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911723" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1580033331471">
       <screen x="0" y="0" width="1280" height="800" />
@@ -299,10 +276,10 @@
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
     <state x="447" y="153" key="SettingsEditor/0.23.1920.1098@0.23.1920.1098" timestamp="1575971501536" />
-    <state x="642" y="328" width="782" height="550" key="find.popup" timestamp="1580740244963">
+    <state x="642" y="328" width="782" height="550" key="find.popup" timestamp="1580907689732">
       <screen x="0" y="23" width="1920" height="1096" />
     </state>
-    <state x="642" y="328" width="782" height="550" key="find.popup/0.23.1920.1096@0.23.1920.1096" timestamp="1580740244963" />
+    <state x="642" y="328" width="782" height="550" key="find.popup/0.23.1920.1096@0.23.1920.1096" timestamp="1580907689732" />
     <state x="139" y="256" width="1141" height="544" key="new project wizard" timestamp="1580028941404">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

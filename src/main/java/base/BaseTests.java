@@ -25,7 +25,7 @@ public class BaseTests {
         caps.setCapability("maxInstances", "1");
 
         driver = new SafariDriver(SafariOptions.fromCapabilities(caps));
-        driver.get("https://beta.insightportal.io/");
+        driver.get("https://www.insightportal.io/");
         driver.manage().window().fullscreen();
         delay(4);
 

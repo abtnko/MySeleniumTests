@@ -51,6 +51,22 @@ public class HomePage extends BaseTests {
         Assert.assertTrue(driver.findElement(cookiesBanner).isDisplayed());
     }
 
+    public CloudAdvisorPage clickOnCloudAdvisor(){
+        try {
+            driver.findElement(cloudAdvisor).click();
+
+        } catch(Exception e) {
+            clickOnTools();
+            delay(2);
+            driver.findElement(cloudAdvisor).click();
+        }
+        return new CloudAdvisorPage(driver);
+    }
+
+    public TestAdvisorPage clickOnTestAdvisor(){
+        driver.findElement(testAdvisor).click();
+        return new TestAdvisorPage(driver);
+    }
 
     public LoginPage clickOnLoginIcon () {
         driver.findElement(loginIcon).click();
@@ -142,20 +158,10 @@ public class HomePage extends BaseTests {
         }
     }
 
-    public CloudAdvisorPage clickOnCloudAdvisor(){
-        try {
-            driver.findElement(cloudAdvisor).click();
 
-        } catch(Exception e) {
-            clickOnTools();
-            delay(2);
-            driver.findElement(cloudAdvisor).click();
-        }
-        return new CloudAdvisorPage(driver);
-    }
 
     public RequestOfferPage goToRequestOfferPage(){
-        driver.get("https://beta.insightportal.io/subscribe/request-offer");
+        driver.get("https://www.insightportal.io/subscribe/request-offer");
         return new RequestOfferPage(driver);
     }
 

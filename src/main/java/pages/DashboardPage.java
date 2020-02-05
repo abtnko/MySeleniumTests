@@ -13,7 +13,6 @@ public class DashboardPage extends BaseTests {
     private By userBanner = By.id("banner-name");
     private By logOut = By.xpath("//span[contains(text(), 'Log out')]");
 
-
     //    private By myAccount = By.xpath("//span[contains(text(), ' My Account')]"); -> Is not working
 
     public DashboardPage (WebDriver driver){
@@ -25,7 +24,7 @@ public class DashboardPage extends BaseTests {
     }
 
     public MyAccountPage goToMyAccount() {
-        driver.get("https://beta.insightportal.io/account");
+        driver.get("https://www.insightportal.io/account");
         delay(2);
         return new MyAccountPage(driver);
     }

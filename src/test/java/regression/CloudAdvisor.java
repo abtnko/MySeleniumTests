@@ -193,7 +193,7 @@ public class CloudAdvisor extends BaseTests {
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
         cloudAdvisorPage.goToArchiveTab();
-        delay(2);
+        delay(4);
         cloudAdvisorPage.restoreTask();
         cloudAdvisorPage.goToTasksTab();
         delay(2);
@@ -219,7 +219,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.setCorrectPassword(user);
         delay(1);
-        loginPage.clickLoginButton();
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(2);
         //        homePage.openMenu();
         homePage.clickOnTools();
@@ -234,7 +234,7 @@ public class CloudAdvisor extends BaseTests {
         cloudAdvisorPage.clickOnPrioritiseTask();
         delay(2);
         cloudAdvisorPage.checkDeviceInFirstRow(DEVICE_NAME);
-        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        cloudAdvisorPage.goToDashboard();
         dashboardPage.logOut();
     }
 
@@ -302,7 +302,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.setCorrectPassword(user);
         delay(1);
-        loginPage.clickLoginButton();
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(2);
         //        homePage.openMenu();
         homePage.clickOnTools();
@@ -317,7 +317,7 @@ public class CloudAdvisor extends BaseTests {
         cloudAdvisorPage.saveChanges();
         delay(2);
         cloudAdvisorPage.checkTaskStatusIsDelayed();
-        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        cloudAdvisorPage.goToDashboard();
         dashboardPage.logOut();
     }
 
@@ -331,17 +331,18 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.setCorrectPassword(user);
         delay(1);
-        loginPage.clickLoginButton();
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(2);
         //        homePage.openMenu();
         homePage.clickOnTools();
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
-        delay(2);
+        delay(4);
         cloudAdvisorPage.checkOverviewWithMoreThanFiveDevices("5");
+        delay(4);
         cloudAdvisorPage.goToNextPage();
         delay(2);
         cloudAdvisorPage.checkOverviewWithMoreThanFiveDevices("6");
-        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        cloudAdvisorPage.goToDashboard();
         dashboardPage.logOut();
     }
 
@@ -354,7 +355,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.setCorrectPassword(user);
         delay(1);
-        loginPage.clickLoginButton();
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(2);
         //        homePage.openMenu();
         homePage.clickOnTools();
@@ -380,7 +381,7 @@ public class CloudAdvisor extends BaseTests {
         delay(2);
         cloudAdvisorPage.dismissPopUp();
         delay(2);
-        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        cloudAdvisorPage.goToDashboard();
         dashboardPage.logOut();
     }
 
@@ -393,7 +394,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.setCorrectPassword(user);
         delay(1);
-        loginPage.clickLoginButton();
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(2);
         //        homePage.openMenu();
         homePage.clickOnTools();
@@ -401,7 +402,7 @@ public class CloudAdvisor extends BaseTests {
         CloudAdvisorPage cloudAdvisorPage = homePage.clickOnCloudAdvisor();
         delay(2);
         cloudAdvisorPage.checkIfAllTabsAreVisible(TABS_NAMES);
-        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        cloudAdvisorPage.goToDashboard();
         dashboardPage.logOut();
     }
 
@@ -414,7 +415,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.setCorrectPassword(user);
         delay(1);
-        loginPage.clickLoginButton();
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(2);
         //        homePage.openMenu();
         delay(2);
@@ -444,7 +445,7 @@ public class CloudAdvisor extends BaseTests {
         cloudAdvisorPage.verifyErrorMessageAfterUpload();
         cloudAdvisorPage.checkIfDevicesPresentInTable(CHECK_DEVICE);
         cloudAdvisorPage.verifyWarningMessageIsPresent();
-        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        cloudAdvisorPage.goToDashboard();
         dashboardPage.logOut();
     }
 
@@ -457,7 +458,7 @@ public class CloudAdvisor extends BaseTests {
         delay(1);
         loginPage.setCorrectPassword(user);
         delay(1);
-        loginPage.clickLoginButton();
+        DashboardPage dashboardPage = loginPage.clickLoginButton();
         delay(2);
         //        homePage.openMenu();
         homePage.clickOnTools();
@@ -473,7 +474,7 @@ public class CloudAdvisor extends BaseTests {
         delay(2);
         cloudAdvisorPage.checkIfDevicesAbsentInTable(CHECK_DEVICE);
         delay(2);
-        DashboardPage dashboardPage = cloudAdvisorPage.goToDashboard();
+        cloudAdvisorPage.goToDashboard();
         dashboardPage.logOut();
     }
 

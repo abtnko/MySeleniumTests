@@ -1,6 +1,7 @@
 package pages;
 
 import base.BaseTests;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -27,6 +28,11 @@ public class DashboardPage extends BaseTests {
         driver.get("https://www.insightportal.io/account");
         delay(2);
         return new MyAccountPage(driver);
+    }
+
+    public TestAdvisorPage goToTestAdvisor(){
+        driver.get("https://www.insightportal.io/testadvisor");
+        return new TestAdvisorPage(driver);
     }
 
 

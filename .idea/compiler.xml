@@ -9,6 +9,7 @@
         <module name="InsightPortalTests" />
         <module name="InsightPortal-DesktopSafari" />
         <module name="safari-desktop" />
+        <module name="MySeleniumTests" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

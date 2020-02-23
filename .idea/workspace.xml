@@ -4,38 +4,6 @@
     <list default="true" id="be8695b7-5190-4b7d-920e-f04c33151b02" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AllNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AllNewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CloudAdvisorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CloudAdvisorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MobileNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MobileNewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RequestOfferPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RequestOfferPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SocialMediaPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SocialMediaPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/StartTrialPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/StartTrialPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/TestAdvisorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TestAdvisorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/CookiesBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/CookiesBanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BaseTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/AllNewsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/AllNewsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/CloudAdvisorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/CloudAdvisorPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/MobileNewsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MobileNewsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/MyAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MyAccountPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/RequestOfferPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/RequestOfferPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/SocialMediaPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/SocialMediaPages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/StartTrialPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/StartTrialPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/TestAdvisorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/TestAdvisorPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/CookiesBanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/CookiesBanner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/RequestOffer.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

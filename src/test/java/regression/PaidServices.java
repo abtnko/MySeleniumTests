@@ -2,15 +2,12 @@ package regression;
 
 
 import base.BaseTests;
-import org.testng.Assert;
-
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 
 public class PaidServices extends BaseTests {
 
-    @Test
+    @Test(priority = 1)
     public void paidServiceNotVisibleForNotLoggedUser() {
         try {
             homePage.clickOnTools();
@@ -22,20 +19,20 @@ public class PaidServices extends BaseTests {
         LoginPage loginPage = homePage.tryToAccessTestAdvisor();
         delay(2);
         loginPage.checkLoginWindowIsPresent();
-        delay(2);
-                homePage.openMenu();
-        homePage.tryToAccessReleaseAdvisor();
-        delay(2);
-        loginPage.checkLoginWindowIsPresent();
-        delay(2);
-                homePage.openMenu();
-        homePage.tryToAccessStatistics();
-        delay(2);
-        loginPage.checkLoginWindowIsPresent();
-        delay(2);
-                homePage.openMenu();
-        homePage.tryToAccessCloudAdvisor();
-        delay(2);
-        loginPage.checkLoginWindowIsPresent();
+//        delay(2);
+//                homePage.openMenu();
+//        homePage.tryToAccessReleaseAdvisor();
+//        delay(2);
+//        loginPage.checkLoginWindowIsPresent();
+//        delay(2);
+//                homePage.openMenu();
+//        homePage.tryToAccessStatistics();
+//        delay(2);
+//        loginPage.checkLoginWindowIsPresent();
+//        delay(2);
+//                homePage.openMenu();
+//        homePage.tryToAccessCloudAdvisor();
+//        delay(2);
+//        loginPage.checkLoginWindowIsPresent();
     }
 }

@@ -16,19 +16,25 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
+            <version>4.0.0-alpha-4</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.14.3</version>
+            <version>7.1.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.14.3</version>
+            <version>7.1.0</version>
             <scope>compile</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
         </dependency>
     </dependencies>
 <build>
@@ -38,29 +44,17 @@
             <artifactId>maven-surefire-report-plugin</artifactId>
             <version>3.0.0-M4</version>
             <configuration>
-                <outputDirectory>${basedir}/target/site</outputDirectory>
+                <outputDirectory>${basedir}/target</outputDirectory>
             </configuration>
         </plugin>
 <!--        <plugin>-->
 <!--            <groupId>org.apache.maven.plugins</groupId>-->
-<!--            <artifactId>maven-surefire-plugin</artifactId>-->
-<!--            <version>3.0.0-M4</version>-->
+<!--            <artifactId>maven-compiler-plugin</artifactId>-->
 <!--            <configuration>-->
-<!--                <systemPropertyVariables>-->
-<!--                    <propertyName>safari</propertyName>-->
-<!--                </systemPropertyVariables>-->
-<!--                <parallel>methods</parallel>-->
-<!--                <threadCount>4</threadCount>-->
+<!--                <source>10</source>-->
+<!--                <target>10</target>-->
 <!--            </configuration>-->
 <!--        </plugin>-->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-                <source>10</source>
-                <target>10</target>
-            </configuration>
-        </plugin>
     </plugins>
 </build>
 

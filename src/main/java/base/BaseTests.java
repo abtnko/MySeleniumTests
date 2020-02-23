@@ -1,18 +1,10 @@
 package base;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.safari.SafariOptions;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.testng.annotations.*;
 import pages.HomePage;
-
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTests {
@@ -22,14 +14,12 @@ public class BaseTests {
     protected static ValidationTest validationTest;
 
 
-    @BeforeTest
-    public void startTest() {
-        DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("maxInstances", "1");
-
-        driver = new SafariDriver(SafariOptions.fromCapabilities(caps));
+    @BeforeMethod
+    public void startDriver() {
+        System.setProperty("webdriver.chrome.driver", "/Users/macbook/MySeleniumTests/binaries/chromedriver");
+        driver = new ChromeDriver();
         driver.get("https://www.insightportal.io/");
-        driver.manage().window().fullscreen();
+//        driver.manage().window().fullscreen();
         delay(4);
 
         homePage = new HomePage(driver);
@@ -44,7 +34,7 @@ public class BaseTests {
 //        delay(3);
 //    }
 
-    @AfterTest
+    @AfterSuite
     public void tearDown(){
         driver.quit();
     }

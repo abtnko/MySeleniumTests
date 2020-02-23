@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class CookiesBanner extends BaseTests {
 
-    @Test
+    @Test(priority = 2)
     public void validateBannerIsPresent(){
         homePage.checkCookiesBannerIsPresent();
     }

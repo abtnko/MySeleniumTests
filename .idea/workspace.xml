@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be8695b7-5190-4b7d-920e-f04c33151b02" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

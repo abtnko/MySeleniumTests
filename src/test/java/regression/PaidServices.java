@@ -2,9 +2,10 @@ package regression;
 
 
 import base.BaseTests;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+
 import org.openqa.selenium.By;
+import org.testng.annotations.Test;
 import pages.LoginPage;
 
 public class PaidServices extends BaseTests {
@@ -14,7 +15,7 @@ public class PaidServices extends BaseTests {
         try {
             homePage.clickOnTools();
         } catch (Exception e){
-            //        homePage.openMenu();
+                    homePage.openMenu();
             delay(2);
             homePage.clickOnTools();
         }
@@ -22,17 +23,17 @@ public class PaidServices extends BaseTests {
         delay(2);
         loginPage.checkLoginWindowIsPresent();
         delay(2);
-        //        homePage.openMenu();
+                homePage.openMenu();
         homePage.tryToAccessReleaseAdvisor();
         delay(2);
         loginPage.checkLoginWindowIsPresent();
         delay(2);
-        //        homePage.openMenu();
+                homePage.openMenu();
         homePage.tryToAccessStatistics();
         delay(2);
         loginPage.checkLoginWindowIsPresent();
         delay(2);
-        //        homePage.openMenu();
+                homePage.openMenu();
         homePage.tryToAccessCloudAdvisor();
         delay(2);
         loginPage.checkLoginWindowIsPresent();

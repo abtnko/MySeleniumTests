@@ -2,26 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be8695b7-5190-4b7d-920e-f04c33151b02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/Articles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/ChangePassword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AllNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AllNewsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CloudAdvisorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CloudAdvisorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MobileNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MobileNewsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RequestOfferPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RequestOfferPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SocialMediaPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SocialMediaPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/StartTrialPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/StartTrialPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/TestAdvisorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TestAdvisorPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/CookiesBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/CookiesBanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/SearchBar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/SocialMedia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/StartTrial.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/TestAdvisor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BaseTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/AllNewsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/AllNewsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/CloudAdvisorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/CloudAdvisorPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/MobileNewsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MobileNewsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/MyAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/MyAccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/RequestOfferPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/RequestOfferPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/SocialMediaPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/SocialMediaPages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/StartTrialPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/StartTrialPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/TestAdvisorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/TestAdvisorPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/InsightPortalTests.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/Articles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/ChangePassword.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/CloudAdvisor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/SearchBar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/SocialMedia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/StartTrial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/TestAdvisor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/CookiesBanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/CookiesBanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/RequestOffer.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +81,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.CookiesBanner">
+  <component name="RunManager" selected="TestNG.PaidServices">
     <configuration name="CookiesBanner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MySeleniumTests" />
       <extension name="coverage">
@@ -79,22 +93,6 @@
       <option name="PACKAGE_NAME" value="regression" />
       <option name="MAIN_CLASS_NAME" value="regression.CookiesBanner" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestAdvisor.validateMarketSharesForBrowserAreNotZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InsightPortalTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.TestAdvisor" />
-      <option name="METHOD_NAME" value="validateMarketSharesForBrowserAreNotZero" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAdvisor.validatePredictionsContainAllMonths" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InsightPortalTests" />
+    <configuration name="PaidServices" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MySeleniumTests" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="regression.*" />
@@ -124,15 +122,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.TestAdvisor" />
-      <option name="METHOD_NAME" value="validatePredictionsContainAllMonths" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="regression.PaidServices" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAdvisor.validateUserCanSetCurrentDateAsStartDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InsightPortalTests" />
+    <configuration name="RequestOffer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MySeleniumTests" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="regression.*" />
@@ -140,20 +139,37 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.TestAdvisor" />
-      <option name="METHOD_NAME" value="validateUserCanSetCurrentDateAsStartDate" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="regression.RequestOffer" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regression" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MySeleniumTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PaidServices" />
+        <item itemvalue="TestNG.RequestOffer" />
+        <item itemvalue="TestNG.regression" />
         <item itemvalue="JUnit.CookiesBanner" />
         <item itemvalue="JUnit.TestAdvisor.validateMarketSharesForMobileDevicesWeeks" />
-        <item itemvalue="JUnit.TestAdvisor.validateMarketSharesForBrowserAreNotZero" />
-        <item itemvalue="JUnit.TestAdvisor.validatePredictionsContainAllMonths" />
-        <item itemvalue="JUnit.TestAdvisor.validateUserCanSetCurrentDateAsStartDate" />
       </list>
     </recent_temporary>
   </component>
@@ -220,32 +236,32 @@
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
     <state x="391" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1575473030619" />
-    <state width="1238" height="226" key="GridCell.Tab.0.bottom" timestamp="1582454627632">
+    <state width="1238" height="226" key="GridCell.Tab.0.bottom" timestamp="1582456560394">
       <screen x="0" y="23" width="1280" height="699" />
     </state>
     <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1581355881745" />
-    <state width="1238" height="226" key="GridCell.Tab.0.bottom/0.23.1280.699@0.23.1280.699" timestamp="1582454627632" />
+    <state width="1238" height="226" key="GridCell.Tab.0.bottom/0.23.1280.699@0.23.1280.699" timestamp="1582456560394" />
     <state width="1878" height="351" key="GridCell.Tab.0.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313601" />
     <state width="1878" height="372" key="GridCell.Tab.0.bottom/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911726" />
-    <state width="1238" height="226" key="GridCell.Tab.0.center" timestamp="1582454627630">
+    <state width="1238" height="226" key="GridCell.Tab.0.center" timestamp="1582456560393">
       <screen x="0" y="23" width="1280" height="699" />
     </state>
     <state width="1238" height="180" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1581355881743" />
-    <state width="1238" height="226" key="GridCell.Tab.0.center/0.23.1280.699@0.23.1280.699" timestamp="1582454627630" />
+    <state width="1238" height="226" key="GridCell.Tab.0.center/0.23.1280.699@0.23.1280.699" timestamp="1582456560393" />
     <state width="1878" height="351" key="GridCell.Tab.0.center/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313600" />
     <state width="1878" height="372" key="GridCell.Tab.0.center/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911721" />
-    <state width="1238" height="226" key="GridCell.Tab.0.left" timestamp="1582454627630">
+    <state width="1238" height="226" key="GridCell.Tab.0.left" timestamp="1582456560392">
       <screen x="0" y="23" width="1280" height="699" />
     </state>
     <state width="1238" height="180" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1581355881742" />
-    <state width="1238" height="226" key="GridCell.Tab.0.left/0.23.1280.699@0.23.1280.699" timestamp="1582454627630" />
+    <state width="1238" height="226" key="GridCell.Tab.0.left/0.23.1280.699@0.23.1280.699" timestamp="1582456560392" />
     <state width="1878" height="351" key="GridCell.Tab.0.left/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313600" />
     <state width="1878" height="372" key="GridCell.Tab.0.left/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911720" />
-    <state width="1238" height="226" key="GridCell.Tab.0.right" timestamp="1582454627631">
+    <state width="1238" height="226" key="GridCell.Tab.0.right" timestamp="1582456560393">
       <screen x="0" y="23" width="1280" height="699" />
     </state>
     <state width="1238" height="180" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1581355881744" />
-    <state width="1238" height="226" key="GridCell.Tab.0.right/0.23.1280.699@0.23.1280.699" timestamp="1582454627631" />
+    <state width="1238" height="226" key="GridCell.Tab.0.right/0.23.1280.699@0.23.1280.699" timestamp="1582456560393" />
     <state width="1878" height="351" key="GridCell.Tab.0.right/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313601" />
     <state width="1878" height="372" key="GridCell.Tab.0.right/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911723" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1580033331471">
@@ -280,10 +296,11 @@
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
     <state x="447" y="153" key="SettingsEditor/0.23.1920.1098@0.23.1920.1098" timestamp="1575971501536" />
-    <state x="428" y="223" width="639" height="486" key="find.popup" timestamp="1581196905597">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="428" y="172" width="782" height="550" key="find.popup" timestamp="1582456230208">
+      <screen x="0" y="23" width="1280" height="699" />
     </state>
     <state x="428" y="223" width="639" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1581196905597" />
+    <state x="428" y="172" width="782" height="550" key="find.popup/0.23.1280.699@0.23.1280.699" timestamp="1582456230208" />
     <state x="642" y="328" width="782" height="550" key="find.popup/0.23.1920.1096@0.23.1920.1096" timestamp="1580907689732" />
     <state x="139" y="256" width="1141" height="544" key="new project wizard" timestamp="1580028941404">
       <screen x="0" y="0" width="1280" height="800" />

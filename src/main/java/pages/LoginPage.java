@@ -4,8 +4,7 @@ import base.BaseTests;
 import base.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import static org.junit.Assert.assertTrue;
+import org.testng.Assert;
 
 public class LoginPage extends BaseTests {
 
@@ -54,7 +53,7 @@ public class LoginPage extends BaseTests {
     }
 
     public void checkLoginWindowIsPresent(){
-        assertTrue(driver.findElement(loginButton).isDisplayed());
+        Assert.assertTrue(driver.findElement(loginButton).isDisplayed());
     }
 
 

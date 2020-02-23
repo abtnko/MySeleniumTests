@@ -1,7 +1,7 @@
 package pages;
 
 import base.User;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

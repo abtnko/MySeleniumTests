@@ -1,12 +1,15 @@
 package base;
 
-import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import pages.HomePage;
 
 import java.util.Map;
@@ -19,7 +22,7 @@ public class BaseTests {
     protected static ValidationTest validationTest;
 
 
-    @Before
+    @BeforeTest
     public void startTest() {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("maxInstances", "1");
@@ -41,7 +44,7 @@ public class BaseTests {
 //        delay(3);
 //    }
 
-    @After
+    @AfterTest
     public void tearDown(){
         driver.quit();
     }

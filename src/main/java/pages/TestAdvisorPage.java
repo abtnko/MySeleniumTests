@@ -1,6 +1,6 @@
 package pages;
 
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.*;
 
 import java.text.DateFormat;

@@ -3,8 +3,7 @@ package pages;
 import base.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import static org.junit.Assert.assertTrue;
+import org.testng.Assert;
 
 public class MyAccountPage {
 
@@ -48,7 +47,7 @@ public class MyAccountPage {
     }
 
     public void checkPresenceOfPopUp(){
-        assertTrue(driver.findElement(popUp).isDisplayed());
+        Assert.assertTrue(driver.findElement(popUp).isDisplayed());
     }
 
     public void closePopUp(){
@@ -56,29 +55,29 @@ public class MyAccountPage {
     }
 
     public void checkAlertTextForLetters(){
-        assertTrue(driver.findElement(invalidPassword).getText().contains("One number required."));
+        Assert.assertTrue(driver.findElement(invalidPassword).getText().contains("One number required."));
     }
 
     public void checkAlertTextForDigits(){
-        assertTrue(driver.findElement(invalidPassword).getText().contains("One lowercase letter required."));
+        Assert.assertTrue(driver.findElement(invalidPassword).getText().contains("One lowercase letter required."));
     }
 
 
     public void checkAlertTextForCharacters(){
-        assertTrue(driver.findElement(invalidPassword).getText().contains("New password needs at least 8 characters."));
+        Assert.assertTrue(driver.findElement(invalidPassword).getText().contains("New password needs at least 8 characters."));
     }
 
     public void checkAlertTextForMismatch(){
-        assertTrue(driver.findElement(invalidPassword).getText().contains("New password does not match the confirm password."));
+        Assert.assertTrue(driver.findElement(invalidPassword).getText().contains("New password does not match the confirm password."));
     }
 
     public void checkAlertTextForMoreThanFifty(){
-        assertTrue(driver.findElement(invalidPassword).getText().contains("New password cannot be longer than 50 characters."));
+        Assert.assertTrue(driver.findElement(invalidPassword).getText().contains("New password cannot be longer than 50 characters."));
     }
 
 
     public void checkAlertTextForSamePasswordAsOld(){
-        assertTrue(driver.findElement(invalidPassword).getText().contains("New password must be different from the old one."));
+        Assert.assertTrue(driver.findElement(invalidPassword).getText().contains("New password must be different from the old one."));
     }
 
 }

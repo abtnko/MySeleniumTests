@@ -1,7 +1,8 @@
 package regression;
 
 import base.BaseTests;
-import org.junit.Test;
+import org.testng.annotations.Test;
+
 
 public class CookiesBanner extends BaseTests {
 

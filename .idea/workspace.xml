@@ -3,10 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="be8695b7-5190-4b7d-920e-f04c33151b02" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/TestAdvisorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TestAdvisorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/Articles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/Articles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/ChangePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/ChangePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/CloudAdvisor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/CookiesBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/CookiesBanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/RequestOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/SearchBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/SearchBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/SocialMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/SocialMedia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/StartTrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/StartTrial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/TestAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/TestAdvisor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/DashboardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/TestAdvisorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/TestAdvisorPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +59,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.TestAdvisor.validateMarketSharesForBrowserAreNotZero">
+  <component name="RunManager" selected="JUnit.TestAdvisor.validateMarketSharesForMobileDevicesWeeks">
     <configuration name="TestAdvisor.validateDeviceSearchWorksProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InsightPortalTests" />
       <extension name="coverage">
@@ -135,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestAdvisor.validateMarketSharesForMobileDevicesWeeks" />
         <item itemvalue="JUnit.TestAdvisor.validateMarketSharesForBrowserAreNotZero" />
         <item itemvalue="JUnit.TestAdvisor.validatePredictionsContainAllMonths" />
         <item itemvalue="JUnit.TestAdvisor.validateUserCanSetCurrentDateAsStartDate" />
         <item itemvalue="JUnit.TestAdvisor.validateDeviceSearchWorksProperly" />
-        <item itemvalue="JUnit.TestAdvisor.validateMarketSharesForMobileDevicesWeeks" />
       </list>
     </recent_temporary>
   </component>
@@ -206,31 +213,31 @@
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
     <state x="391" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1575473030619" />
-    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1581272658872">
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1581355881745">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1581272658872" />
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1581355881745" />
     <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.699@0.23.1280.699" timestamp="1581271443324" />
     <state width="1878" height="351" key="GridCell.Tab.0.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313601" />
     <state width="1878" height="372" key="GridCell.Tab.0.bottom/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911726" />
-    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1581272658870">
+    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1581355881743">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1581272658870" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1581355881743" />
     <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.699@0.23.1280.699" timestamp="1581271443323" />
     <state width="1878" height="351" key="GridCell.Tab.0.center/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313600" />
     <state width="1878" height="372" key="GridCell.Tab.0.center/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911721" />
-    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1581272658869">
+    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1581355881742">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1581272658869" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1581355881742" />
     <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.699@0.23.1280.699" timestamp="1581271443322" />
     <state width="1878" height="351" key="GridCell.Tab.0.left/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313600" />
     <state width="1878" height="372" key="GridCell.Tab.0.left/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911720" />
-    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1581272658871">
+    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1581355881744">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1581272658871" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1581355881744" />
     <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.699@0.23.1280.699" timestamp="1581271443324" />
     <state width="1878" height="351" key="GridCell.Tab.0.right/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313601" />
     <state width="1878" height="372" key="GridCell.Tab.0.right/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911723" />

@@ -100,15 +100,10 @@ public class TestAdvisorPage {
     }
 
     public void clickOnShowMoreUntilWholeTableIsExpanded(){
-//        Dimension size = driver.findElements(all100Positions).get(100).getSize();
-//        while (size.height ==0 && size.width == 0) {
-//            driver.findElement(showMore).click();
-//        }
-//td[contains(text(), '100')]
         try {
             while (true)
             {
-                Assert.assertFalse(driver.findElements(all100Positions).get(100).isDisplayed());
+                driver.findElements(all100Positions).get(100).isDisplayed();
             }
         } catch (IndexOutOfBoundsException ex) {
             driver.findElement(showMore).click();

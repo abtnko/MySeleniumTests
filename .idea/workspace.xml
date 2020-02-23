@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be8695b7-5190-4b7d-920e-f04c33151b02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/binaries/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/binaries/operadriver_mac64/operadriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/binaries/operadriver_mac64/sha512_sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/CookiesBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/CookiesBanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/PaidServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BaseTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/CookiesBanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/CookiesBanner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/PaidServices.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,10 +47,10 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="TestNG./Users/macbook/MySeleniumTests/parallel.xml">
-    <configuration name="CookiesBanner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CookiesBanner">
+    <configuration name="CookiesBanner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MySeleniumTests" />
       <extension name="coverage">
         <pattern>
@@ -70,7 +60,9 @@
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
       <option name="MAIN_CLASS_NAME" value="regression.CookiesBanner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CookiesBanner" />
         <item itemvalue="TestNG./Users/macbook/MySeleniumTests/parallel.xml" />
         <item itemvalue="TestNG.PaidServices" />
         <item itemvalue="TestNG.RequestOffer" />
         <item itemvalue="TestNG.regression" />
-        <item itemvalue="JUnit.CookiesBanner" />
       </list>
     </recent_temporary>
   </component>
@@ -208,32 +200,32 @@
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
     <state x="391" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1575473030619" />
-    <state width="1238" height="224" key="GridCell.Tab.0.bottom" timestamp="1582486488857">
+    <state width="1238" height="224" key="GridCell.Tab.0.bottom" timestamp="1582486804427">
       <screen x="0" y="23" width="1280" height="699" />
     </state>
     <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1581355881745" />
-    <state width="1238" height="224" key="GridCell.Tab.0.bottom/0.23.1280.699@0.23.1280.699" timestamp="1582486488857" />
+    <state width="1238" height="224" key="GridCell.Tab.0.bottom/0.23.1280.699@0.23.1280.699" timestamp="1582486804427" />
     <state width="1878" height="351" key="GridCell.Tab.0.bottom/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313601" />
     <state width="1878" height="372" key="GridCell.Tab.0.bottom/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911726" />
-    <state width="1238" height="224" key="GridCell.Tab.0.center" timestamp="1582486488856">
+    <state width="1238" height="224" key="GridCell.Tab.0.center" timestamp="1582486804426">
       <screen x="0" y="23" width="1280" height="699" />
     </state>
     <state width="1238" height="180" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1581355881743" />
-    <state width="1238" height="224" key="GridCell.Tab.0.center/0.23.1280.699@0.23.1280.699" timestamp="1582486488856" />
+    <state width="1238" height="224" key="GridCell.Tab.0.center/0.23.1280.699@0.23.1280.699" timestamp="1582486804426" />
     <state width="1878" height="351" key="GridCell.Tab.0.center/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313600" />
     <state width="1878" height="372" key="GridCell.Tab.0.center/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911721" />
-    <state width="1238" height="224" key="GridCell.Tab.0.left" timestamp="1582486488855">
+    <state width="1238" height="224" key="GridCell.Tab.0.left" timestamp="1582486804425">
       <screen x="0" y="23" width="1280" height="699" />
     </state>
     <state width="1238" height="180" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1581355881742" />
-    <state width="1238" height="224" key="GridCell.Tab.0.left/0.23.1280.699@0.23.1280.699" timestamp="1582486488855" />
+    <state width="1238" height="224" key="GridCell.Tab.0.left/0.23.1280.699@0.23.1280.699" timestamp="1582486804425" />
     <state width="1878" height="351" key="GridCell.Tab.0.left/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313600" />
     <state width="1878" height="372" key="GridCell.Tab.0.left/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911720" />
-    <state width="1238" height="224" key="GridCell.Tab.0.right" timestamp="1582486488856">
+    <state width="1238" height="224" key="GridCell.Tab.0.right" timestamp="1582486804427">
       <screen x="0" y="23" width="1280" height="699" />
     </state>
     <state width="1238" height="180" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1581355881744" />
-    <state width="1238" height="224" key="GridCell.Tab.0.right/0.23.1280.699@0.23.1280.699" timestamp="1582486488856" />
+    <state width="1238" height="224" key="GridCell.Tab.0.right/0.23.1280.699@0.23.1280.699" timestamp="1582486804427" />
     <state width="1878" height="351" key="GridCell.Tab.0.right/0.23.1920.1096@0.23.1920.1096" timestamp="1580906313601" />
     <state width="1878" height="372" key="GridCell.Tab.0.right/0.23.1920.1098@0.23.1920.1098" timestamp="1576596911723" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1580033331471">
@@ -264,10 +256,10 @@
       <screen x="0" y="23" width="1920" height="1098" />
     </state>
     <state x="501" y="233" key="Maven.ArtifactSearchDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1575469439864" />
-    <state x="256" y="23" key="SettingsEditor" timestamp="1582486358376">
+    <state x="256" y="23" key="SettingsEditor" timestamp="1582486745235">
       <screen x="0" y="23" width="1280" height="699" />
     </state>
-    <state x="256" y="23" key="SettingsEditor/0.23.1280.699@0.23.1280.699" timestamp="1582486358376" />
+    <state x="256" y="23" key="SettingsEditor/0.23.1280.699@0.23.1280.699" timestamp="1582486745235" />
     <state x="447" y="153" key="SettingsEditor/0.23.1920.1098@0.23.1920.1098" timestamp="1575971501536" />
     <state x="428" y="172" width="782" height="550" key="find.popup" timestamp="1582456230208">
       <screen x="0" y="23" width="1280" height="699" />

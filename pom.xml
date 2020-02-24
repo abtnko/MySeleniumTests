@@ -38,7 +38,7 @@
             <artifactId>maven-surefire-report-plugin</artifactId>
             <version>3.0.0-M4</version>
             <configuration>
-                <outputDirectory>${basedir}/target/surefire-reports</outputDirectory>
+                <outputDirectory>${basedir}/target</outputDirectory>
             </configuration>
         </plugin>
         <plugin>
@@ -47,6 +47,18 @@
             <configuration>
                 <source>10</source>
                 <target>10</target>
+            </configuration>
+        </plugin>
+        <!-- Following plugin executes the testng tests -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M4</version>
+            <configuration>
+                <!-- Suite testng xml file to consider for test execution -->
+                <suiteXmlFiles>
+                    <suiteXmlFile>parallel.xml</suiteXmlFile>
+                </suiteXmlFiles>
             </configuration>
         </plugin>
 <!--        <plugin>-->

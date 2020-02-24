@@ -5,7 +5,7 @@ import base.BaseTests;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 
-public class PaidServices extends BaseTests {
+public class PaidServicesTest extends BaseTests {
 
     @Test(priority = 1)
     public void paidServiceNotVisibleForNotLoggedUser() {

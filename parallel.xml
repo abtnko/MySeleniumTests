@@ -3,9 +3,9 @@
 <suite name="Regression" thread-count="2" parallel="methods" >
     <test name="ParallelTests">
         <classes>
-            <class name="regression.CookiesBanner">
+            <class name="regression.CookiesBannerTest">
             </class>
-            <class name="regression.PaidServices">
+            <class name="regression.PaidServicesTest">
             </class>
         </classes>
     </test>
